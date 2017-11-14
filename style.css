@@ -1,0 +1,45 @@
+h2 {
+	color:white; 
+	font-size:12px;
+		
+}
+p {
+	text-align: center;
+	color: black;
+
+}
+body {
+
+	background-color:grey;
+"	background-image: url("background.jpg");"	
+
+}
+
+div {
+
+	background-color:blue;
+}
+
+.NavBar{
+
+	background-color:red;
+	text-color:red;
+}
+
+.NavBar a{
+	display: inline-block;
+	color: white;	
+	text-align: left;
+	float: left;
+	font-size 17px;
+	padding:2px;
+
+}
+
+.NavBar a:hover{
+
+	background-color: black;
+	color:red;
+	
+
+}
