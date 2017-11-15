@@ -1,45 +1,112 @@
-h2 {
-	color:white; 
-	font-size:12px;
-		
-}
-p {
-	text-align: center;
-	color: black;
-
+@font-face{
+	font-family: square;
+	src: url(sq.otf);
 }
 body {
-
-	background-color:grey;
-"	background-image: url("background.jpg");"	
-
-}
-
-div {
-
-	background-color:blue;
-}
-
-.NavBar{
-
-	background-color:red;
-	text-color:red;
-}
-
-.NavBar a{
-	display: inline-block;
-	color: white;	
-	text-align: left;
-	float: left;
-	font-size 17px;
-	padding:2px;
-
-}
-
-.NavBar a:hover{
-
-	background-color: black;
-	color:red;
 	
+	background-color:black;
+	padding-top: 30px;
 
+}
+
+#navBar{
+	float:center;	
+	text-align: center;	
+	border-width:1px;
+	border-color:white;
+	border-bottom-style:solid;
+	padding-bottom:60px;	
+}
+
+#navBar a, #navBar h1{
+	display:inline;
+	font-style: normal;
+	font-family:square;
+	color: white;	
+	font-weight: 100;	
+	text-decoration:none;
+	padding-left:20px;
+	padding-right:20px;
+	
+	letter-spacing: 1px;
+
+}
+
+#navBar img{
+	top:35px;	
+	position:relative;	
+	display:inline;
+}
+#navBar a:hover{
+
+	font-weight: 700;	
+
+	letter-spacing: 0.5px;
+}
+
+
+
+#home{
+	padding-top: 140px;
+	position: relative;
+	
+}
+
+.back{
+	z-index:-1;	
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
+
+
+}
+
+.image{
+	border-style:solid;
+	border-color:white;
+	
+	opacity:0.7;
+
+}
+
+#home h1{
+	text-align:center;	
+	color:white;
+	top: 300px; 
+
+	font-weight:100;
+	color:white;
+	font-size: 150%;
+
+	font-family:square;
+
+}
+p{
+	text-align:center;	
+	color:white;
+	top: 200px; 
+}
+
+h1{
+	text-align:center;	
+	color:white;
+	top: 200px; 
+
+	font-weight:100;
+	color:white;
+	font-size: 50px;
+
+
+
+}
+
+ul{
+
+color:white;
+}
+
+img{
 }
