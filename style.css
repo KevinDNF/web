@@ -2,6 +2,9 @@
 	font-family: square;
 	src: url(sq.otf);
 }
+
+
+
 body {
 	
 	background-color:black;
@@ -9,7 +12,7 @@ body {
 
 }
 
-#navBar{
+nav {
 	float:center;	
 	text-align: center;	
 	border-width:1px;
@@ -18,7 +21,7 @@ body {
 	padding-bottom:60px;	
 }
 
-#navBar a, #navBar h1{
+nav a, nav h1{
 	display:inline;
 	font-style: normal;
 	font-family:square;
@@ -32,12 +35,13 @@ body {
 
 }
 
-#navBar img{
+nav img{
 	top:35px;	
 	position:relative;	
 	display:inline;
 }
-#navBar a:hover{
+
+nav a:hover{
 
 	font-weight: 700;	
 
@@ -46,7 +50,7 @@ body {
 
 
 
-#home{
+.home{
 	padding-top: 140px;
 	position: relative;
 	
@@ -67,16 +71,16 @@ body {
 .image{
 	border-style:solid;
 	border-color:white;
-	
+	display:inline;	
 	opacity:0.7;
-
+	float:right;
 }
 
-#home h1{
+.home h1{
 	text-align:center;	
 	color:white;
 	top: 300px; 
-
+	
 	font-weight:100;
 	color:white;
 	font-size: 150%;
@@ -84,8 +88,25 @@ body {
 	font-family:square;
 
 }
-p{
+
+.home h2{
 	text-align:center;	
+	color:white;
+
+	color:white;
+	font-size: 150%;
+
+	font-family:square;
+
+}
+
+ 
+
+p{
+	text-align:justify;	
+		
+
+	display:inline;	
 	color:white;
 	top: 200px; 
 }
@@ -99,14 +120,25 @@ h1{
 	color:white;
 	font-size: 50px;
 
+}
+
+
+a {
+	color:purple;
+	font-size 30px;
 
 
 }
 
 ul{
 
-color:white;
 }
 
-img{
+.textBox {
+	position:relative;	
+	margin-right:auto;
+	margin-left:auto;	
+	width:25%;
 }
+
+
