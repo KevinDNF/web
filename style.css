@@ -3,13 +3,16 @@
 	src: url(fonts/sq.otf);
 }
 
+html {
 
+	background:black;
+}
 
 body {
 	
-	background-color:black;
 	padding-top: 30px;
 
+	background-color:black;
 }
 
 nav {
@@ -57,7 +60,7 @@ nav a:hover{
 }
 
 .back{
-	z-index:-1;	
+	z-index:0;	
 	position: absolute;
 	left:0;
 	top:0;
@@ -73,7 +76,6 @@ nav a:hover{
 	border-color:white;
 	display:inline;	
 	opacity:0.7;
-	float:right;
 }
 
 .home h1{
