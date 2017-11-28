@@ -1,7 +1,7 @@
 # Website  
 This will be my website for Web Fundation coursework where I will learn and experimentate with HTML,CSS and Javascript.
 
-Website live at www.kevindnf.github.io
+Website live at https://kevindnf.github.io/
 
 ##Version 1
 
