@@ -4,59 +4,71 @@
 }
 
 html {
-
 	background:black;
+	font:12px square;
 }
 
-body {
-	
-	padding-top: 30px;
+/* Global */
 
-	background-color:black;
+a {
+	color:darkcyan;
+	text-decoration:none;
 }
+
+p{
+	color:white;
+	font-size:13px;
+	text-align:justify;	
+}
+
+h1{
+	font:50px 100;
+	color:white;
+}
+
+/* ---Nav---- */
 
 nav {
-	float:center;	
 	text-align: center;	
 	border-width:1px;
 	border-color:white;
 	border-bottom-style:solid;
-	padding-bottom:60px;	
+	width:100%;
+	height:120px;
 }
 
-nav a, nav h1{
-	display:inline;
-	font-style: normal;
-	font-family:square;
-	color: white;	
-	font-weight: 100;	
+nav a , nav img{
+	font-size:17px;
+	font:17px 100 square normal;
+	color:white;	
 	text-decoration:none;
 	padding-left:20px;
 	padding-right:20px;
-	
 	letter-spacing: 1px;
-
+	margin-top:-12px;
 }
 
 nav img{
 	top:35px;	
 	position:relative;	
-	display:inline;
 }
 
 nav a:hover{
-
-	font-weight: 700;	
-
-	letter-spacing: 0.5px;
+	font-weight: 900;	
 }
 
+/* ---Body---- */
 
+body {
+	background-color:black;
+}
 
 .home{
 	padding-top: 140px;
 	position: relative;
-	
+/*	border-color:white;
+	border-style:solid;
+*/
 }
 
 .back{
@@ -67,13 +79,12 @@ nav a:hover{
 	width: 100%;
 	height: auto;
 	opacity: 0.3;
-
-
 }
 
 .image{
 	border-style:solid;
 	border-color:white;
+	
 	display:inline;	
 	opacity:0.7;
 }
@@ -82,11 +93,9 @@ nav a:hover{
 	text-align:center;	
 	color:white;
 	top: 300px; 
-	
 	font-weight:100;
 	color:white;
 	font-size: 150%;
-
 	font-family:square;
 
 }
@@ -94,53 +103,20 @@ nav a:hover{
 .home h2{
 	text-align:center;	
 	color:white;
-
 	color:white;
 	font-size: 150%;
-
 	font-family:square;
-
-}
-
- 
-
-p{
-	text-align:justify;	
-		
-
-	display:inline;	
-	color:white;
-	top: 200px; 
-}
-
-h1{
-	text-align:center;	
-	color:white;
-	top: 200px; 
-
-	font-weight:100;
-	color:white;
-	font-size: 50px;
-
-}
-
-
-a {
-	color:purple;
-	font-size 30px;
-
-
-}
-
-ul{
-
 }
 
 .textBox {
-	position:relative;	
+	position:relative;
+	text-align:center;
 	margin-right:auto;
 	margin-left:auto;	
-	width:25%;
+	width:40%;
+/*	border-color:white;
+	border-style:solid;
+*/
 }
 
 
