@@ -35,6 +35,11 @@ nav {
 	border-bottom-style:solid;
 	width:100%;
 	height:120px;
+	background-color:black;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
 }
 
 nav a , nav img{
@@ -59,37 +64,36 @@ nav a:hover{
 
 /* ---Body---- */
 
-body {
-	background-color:black;
+.background{
+	z-index:-1;	
+	position:fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	opacity: 0.3;
 }
 
-.home{
-	padding-top: 140px;
+article {
+	width:40%;
+	margin:auto;
+	text-align:justify;
+}
+
+.container{
+	padding-top: 120px;
 	position: relative;
 /*	border-color:white;
 	border-style:solid;
 */
 }
 
-.back{
-	z-index:0;	
-	position: absolute;
-	left:0;
-	top:0;
-	width: 100%;
-	height: auto;
-	opacity: 0.3;
-}
-
 .image{
 	border-style:solid;
 	border-color:white;
-	
-	display:inline;	
 	opacity:0.7;
 }
 
-.home h1{
+.container h1{
 	text-align:center;	
 	color:white;
 	top: 300px; 
@@ -100,23 +104,11 @@ body {
 
 }
 
-.home h2{
+.container h2{
 	text-align:center;	
 	color:white;
 	color:white;
 	font-size: 150%;
 	font-family:square;
 }
-
-.textBox {
-	position:relative;
-	text-align:center;
-	margin-right:auto;
-	margin-left:auto;	
-	width:40%;
-/*	border-color:white;
-	border-style:solid;
-*/
-}
-
 
