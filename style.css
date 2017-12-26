@@ -6,6 +6,7 @@
 html {
 	background:black;
 	font:12px square;
+	color:white;
 }
 
 /* Global */
@@ -17,7 +18,7 @@ a {
 
 p{
 	color:white;
-	font-size:13px;
+	font-size:11px;
 	text-align:justify;	
 }
 
@@ -44,6 +45,7 @@ nav {
 
 nav a , nav img{
 	font-size:17px;
+	font-family:square;
 	font:17px 100 square normal;
 	color:white;	
 	text-decoration:none;
@@ -112,3 +114,34 @@ article {
 	font-family:square;
 }
 
+.lit {
+	padding-top:140px;
+}
+
+.lit h1, .lit h2, .lit p{
+	font-family:arial;
+	color:white;
+	text-align:left;
+}
+
+.lit p{
+	text-align:justify;
+}
+
+article a{
+	text-decoration:none;
+}
+
+ul {
+	list-style-type:none;
+	display:table-cell;
+}
+
+li {
+	padding:6px;
+
+}
+
+h3 {
+
+}
