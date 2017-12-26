@@ -133,7 +133,7 @@ h1{
 /*	margin-top: 150px;*/
 
 	max-width:100%;	
-	margin:10px;
+	margin:2%;
 	position: relative;
 }
 
@@ -147,7 +147,6 @@ h1{
 	.center{
 		max-width:85%;
 	}
-
 
 }
 
@@ -182,10 +181,7 @@ width:fit-content;
 
 }
 
-@media screen and (max-width:1000px){
 
-
-}	
 
 /*------Article-----*/
 
@@ -228,7 +224,7 @@ article p{
 
 	article {
 
-	width:85%;
+	width:auto;
 	}
 
 }	
