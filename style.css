@@ -132,6 +132,7 @@ article a{
 	text-decoration:none;
 }
 
+
 ul {
 	list-style-type:none;
 	display:table-cell;
@@ -142,6 +143,13 @@ li {
 
 }
 
-h3 {
+dl {
+	display:table-cell;
+}
 
+dd {
+	margin-left:0;
+	padding-top:6px;
+	padding-left:18px;
+	padding-right:18px;
 }
