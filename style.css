@@ -59,7 +59,7 @@ nav li{
 	margin-right:2%;
 }
 
-@media screen and (max-width:460px){
+@media screen and (max-width:470px){
 
 	nav a{
 
@@ -176,8 +176,22 @@ h3{
 }
 
 .list {
-margin:auto;
+	margin:auto;
 width:fit-content;
+
+}
+
+@media screen and (max-width:450px){
+
+
+
+.list{
+
+width:310px;
+}
+
+
+
 
 }
 
@@ -262,6 +276,20 @@ article p{
 .profile p{
 
 display:flex;
+}
+
+@media screen and (max-width:800px){
+
+.profile{
+
+	width:fit-content;
+}
+
+.profile img{
+
+	height:150px;
+}
+
 }
 
 video {
