@@ -1,115 +1,85 @@
-@font-face{
-	font-family: square;
-	src: url(Fonts/sq.otf);
-}
+@font-face{font-family: square;	src: url(Fonts/sq.otf); }
+@font-face{font-family: roboto;	src: url(Fonts/roboto-slab.regular.ttf); }
+@font-face{font-family: roboto; font-weight:200;	src: url(Fonts/roboto-slab.light.ttf); }
 
 html {
 	background:black;
-	font:12px square;
+	font:12px roboto;
 	color:white;
 }
 body{
-margin:0;
+	margin:0;
 }
-
-/* ---Nav---- */
-
 nav {
-	text-align: center;	
 	border-width:1px;
 	border-color:white;
 	border-bottom-style:solid;
 	width:100%;
 	height:fit-content;
 	background-color:black;
-/*	position:fixed; */
-	z-index:1;
-	left:0;
-	top:0;
-	overflow:hidden;
+	text-align: center;	
+	font:17px square;
 }
-
-nav a , nav img{
-	font-size:17px;
-	font-family:square;
-	font:17px 100 square normal;
-	color:white;	
+nav a{
+	color:white;
 	text-decoration:none;
-	letter-spacing: 1px;
 }
-
 nav img{
 	vertical-align:middle;
 	margin:20px;
 }
-
 nav a:hover{
-	font-weight: 900;	
+	color:inherit;
+	font-weight:900;
 }
-
-
 nav ul,nav li{
 	display:inline;
 	padding:0;
 }
-
 nav li{
-	margin-left:2%;
-	margin-right:2%;
+	margin:auto 2%;
 }
-
 @media screen and (max-width:470px){
-
 	nav a{
-
-	margin-left:5px;
-	margin-right:5px;
-	font-size:15px;
+		margin:auto 5px;
+		font-size:15px;
 	}
 	nav img{
-/*	margin-left:35px;
-	margin-right:25px; */
-
-	margin-left:8%;
-	margin-right:8%;
-	vertical-align:top;
-	width:80px;
+		margin:inherit 8%;
+		vertical-align:top;
+		width:80px;
 	}
 	nav li{
 		display:block;	
 		margin-top:15px;
 	}
-
 	nav ul{
 		display:inline-block;
 	}
-
 }
-
-
-/* ---Body---- */
-
 a {
 	color:darkcyan;
 	text-decoration:none;
 }
-
+a:hover{
+	color:cyan;
+}
 p{
-	color:white;
 	font-size:11px;
 	text-align:justify;	
 }
-
 h1{
 	text-align:center;
-	color:white;
-	top: 300px;
-	font-weight:100;
-	font-size:150%;
-	font-family:square;
-
+	font:150% square;
 }
-
+h2{
+	text-align:center;	
+	font: 1.17em square;
+}
+h3{
+	text-align:center;
+	font:2em monospace;
+}
 .background{
 	z-index:-1;	
 	position:fixed;
@@ -118,86 +88,58 @@ h1{
 	width: 100%;
 	opacity: 0.2;
 }
-
 @media screen and (max-width:1000px){
-
 	.background{
 		height:100%;
 		width:auto;
 	}
-
 }
-
 .container{
 /*	margin-top: 150px;*/
-
 	max-width:100%;	
 	margin:2%;
 	position: relative;
 }
-
 .center{
 	margin:auto;
 	margin-top:30px;
 	max-width:60%;
 }
 @media screen and (max-width:1000px){
-
 	.center{
 		max-width:85%;
 	}
-
 }
 
-
-
-h2{
-	text-align:center;	
-	color:white;
-	font-size: 150%;
-	font-family:square;
-}
-
-h3{
-	text-align:center;
-}
-
-.list ul {
+.workmap ul {
 	list-style-type:none;
 	display:inline-table;
 	padding-right:19px;
 	padding-left:19px;
-	
 }
-
-.list li {
+.workmap li {
 	padding-top:12px;
 }
-
-.list {
+.workmap {
 	margin:auto;
-width:fit-content;
-
+	width:fit-content;
 }
-
+.workmap a{
+	font-family:square;
+}
+.workmap p{
+	text-align:left;
+	width:140px;
+}
 @media screen and (max-width:450px){
-
-
-
-.list{
-
-width:310px;
+	.workmap{ 
+		width:310px;
+	}
+	.workmap p{
+		width:110px;
+		/* display:none; */
+	}
 }
-
-
-
-
-}
-
-
-
-/*------Article-----*/
-
 article {
 	border-style:solid;
 	border-width:1px;
@@ -208,48 +150,33 @@ article {
 	display:block;
 	text-align:justify;
 }
-
 article h1{
 	margin-bottom:80px;
 }
-
 article h1, article h2, article p{
 	font-family:georgia;
 	color:white;
 	text-align:left;
 }
-
 article p{
 	text-align:justify;
 	font-size:14px;
 }
-
 @media screen and (max-width:1000px){
-
 	article {
-
-	width:75%;
+		width:75%;
 	}
-
 }	
-
 @media screen and (max-width:800px){
-
 	article {
-
-	width:auto;
+		width:auto;
 	}
-
 }	
-	
-/*------Profile-----*/
-
 .profile {
 	margin:auto;
 	margin-top:50px;
 	width:600px;
 }
-
 .profile img {
 	vertical-align:top;
 	border-style:solid;
@@ -257,41 +184,31 @@ article p{
 	border-width:1px;
 	float:left;
 	opacity:0.9;
-	margin-left:10px;
-	margin-right:10px;
+	margin:auto 10px;
 }
-
 .profile h1{
-
 	border-color:#ffffff;
 	border-left-style:solid;
 	border-width:1px;
 	display:inline;
 }
-
 .profile p , .profile h1 {
 	padding-left:15px;
 }
-
-
-
 @media screen and (max-width:800px){
-
-.profile{
-
-	width:fit-content;
+	.profile p{
+		text-align:left;
+	}
+	.profile{
+		width:fit-content;
+	}
+	.profile img{
+		height:150px;
+	}
 }
-
-.profile img{
-
-	height:150px;
-}
-
-}
-
 video {
-margin-top:10px;
-border-style:solid;
-border-width:1px;
-border-color:white;
+	margin-top:10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
 }
