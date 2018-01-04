@@ -175,7 +175,7 @@ article p{
 .profile {
 	margin:auto;
 	margin-top:50px;
-	width:600px;
+	width:620px;
 }
 .profile img {
 	vertical-align:top;
@@ -186,14 +186,22 @@ article p{
 	opacity:0.9;
 	margin:auto 10px;
 }
-.profile h1{
+.profile h1 , .profile h2{
 	border-color:#ffffff;
 	border-left-style:solid;
 	border-width:1px;
+	text-align:left;
+}
+.profile h1{
 	display:inline;
 }
-.profile p , .profile h1 {
+.profile h2{
+	display:inline;
+	padding-left:10px;
+}
+.profile p , .profile h1{
 	padding-left:15px;
+	text-align:left;
 }
 @media screen and (max-width:800px){
 	.profile p{
