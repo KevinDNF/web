@@ -86,7 +86,7 @@ h3{
 	left:0;
 	top:0;
 	width: 100%;
-	opacity: 0.2;
+	opacity: 0.5;
 }
 @media screen and (max-width:1000px){
 	.background{
@@ -149,6 +149,7 @@ article {
 	width:60%;
 	display:block;
 	text-align:justify;
+	background-color:rgba(0,0,0,0.5);
 }
 article h1{
 	margin-bottom:80px;
