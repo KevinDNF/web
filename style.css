@@ -221,3 +221,32 @@ video {
 	border-width:1px;
 	border-color:white;
 }
+footer{
+	position:absolute;
+	right:1%;
+	bottom:0%;
+	text-align:center;
+}
+footer h3{
+	font-size:1.2px;
+}
+footer p{
+	text-align:center;
+}
+#validator{
+	padding:2px;
+	margin:2px;
+	height:12px;
+	border-style:solid;
+	border-bottom-style:none;
+	border-color:blue;
+	border-width:2px;
+	background-color:darkblue;
+	overflow:hidden;
+	transition: height 0.5s;
+}
+#validator:hover{
+	height:100px;
+	border-color:darkcyan;
+	background-color:darkblue;
+}
