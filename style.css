@@ -1,11 +1,11 @@
-@font-face{font-family: square;	src: url(Fonts/sq.otf); }
-@font-face{font-family: roboto;	src: url(Fonts/roboto-slab.regular.ttf); }
-@font-face{font-family: roboto; font-weight:200;	src: url(Fonts/roboto-slab.light.ttf); }
+@font-face{font-family: square;	src: url(fonts/sq.otf); }
+@font-face{font-family: roboto;	src: url(fonts/roboto-slab.regular.ttf); }
+jfont-face{font-family: roboto; font-weight:200;	src: url(fonts/roboto-slab.light.ttf); }
 
 html {
-	font:1rem roboto;
+	font:1rem;
 	color:white;
-	background:url("Images/background.jpg") no-repeat center center fixed;
+	background:url("images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 body{
@@ -19,7 +19,7 @@ nav {
 	height:fit-content;
 	background-color:black;
 	text-align: center;	
-	font:17px square;
+	font:1em square;
 }
 nav a{
 	color:white;
@@ -43,7 +43,7 @@ nav li{
 @media screen and (max-width:470px){
 	nav a{
 		margin:auto 5px;
-		font-size:15px;
+		font-size:1em;
 	}
 	nav img{
 		margin:inherit 8%;
@@ -66,16 +66,15 @@ a:hover{
 	color:cyan;
 }
 p{
-	font-size:11px;
 	text-align:justify;	
 }
 h1{
 	text-align:center;
-	font:150% square;
+	font:1.5em square;
 }
 h2{
 	text-align:center;	
-	font: 1.17em square;
+	font: 1.1em square;
 }
 h3{
 	text-align:center;
