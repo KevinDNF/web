@@ -3,9 +3,10 @@
 @font-face{font-family: roboto; font-weight:200;	src: url(Fonts/roboto-slab.light.ttf); }
 
 html {
-	background:black;
-	font:12px roboto;
+	font:1rem roboto;
 	color:white;
+	background:url("Images/background.jpg") no-repeat center center fixed;
+	background-size: cover;
 }
 body{
 	margin:0;
@@ -100,17 +101,16 @@ h3{
 	margin:2%;
 	position: relative;
 }
-.center{
+main{
 	margin:auto;
 	margin-top:30px;
 	max-width:60%;
 }
 @media screen and (max-width:1000px){
-	.center{
+	main{
 		max-width:85%;
 	}
 }
-
 .workmap ul {
 	list-style-type:none;
 	display:inline-table;
@@ -222,7 +222,7 @@ video {
 	border-color:white;
 }
 footer{
-	position:absolute;
+	position:fixed;
 	right:1%;
 	bottom:0%;
 	text-align:center;
@@ -236,7 +236,7 @@ footer p{
 #validator{
 	padding:2px;
 	margin:2px;
-	height:12px;
+	height:30px;
 	border-style:solid;
 	border-bottom-style:none;
 	border-color:blue;
@@ -246,7 +246,16 @@ footer p{
 	transition: height 0.5s;
 }
 #validator:hover{
-	height:100px;
+	height:190px;
 	border-color:darkcyan;
-	background-color:darkblue;
+}
+#validator a{
+	display:inline;
+}
+#validator img{
+	margin:6px;
+	opacity:0.4;
+}
+#validator img:hover{
+	opacity:1;
 }
