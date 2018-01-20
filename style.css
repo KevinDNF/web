@@ -1,9 +1,9 @@
 @font-face{font-family: square;	src: url(fonts/sq.otf); }
 @font-face{font-family: roboto;	src: url(fonts/roboto-slab.regular.ttf); }
-jfont-face{font-family: roboto; font-weight:200;	src: url(fonts/roboto-slab.light.ttf); }
+@font-face{font-family: roboto; font-weight:200;	src: url(fonts/roboto-slab.light.ttf); }
 
 html {
-	font:1rem;
+	font:12px roboto;
 	color:white;
 	background:url("images/background.jpg") no-repeat center center fixed;
 	background-size: cover;
@@ -19,7 +19,7 @@ nav {
 	height:fit-content;
 	background-color:black;
 	text-align: center;	
-	font:1em square;
+	font:15px square;
 }
 nav a{
 	color:white;
