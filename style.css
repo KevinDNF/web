@@ -1,11 +1,13 @@
 @font-face{font-family: square;	src: url(fonts/sq.otf); }
 @font-face{font-family: roboto;	src: url(fonts/roboto-slab.regular.ttf); }
 @font-face{font-family: roboto; font-weight:200;	src: url(fonts/roboto-slab.light.ttf); }
+@font-face{font-family: source; src: url(fonts/SourceSansPro-Regular.otf); }
 
 html {
-	font:12px roboto;
+	font:1rem source;
 	color:white;
-	background:url("images/background.jpg") no-repeat center center fixed;
+	/*background-color:#222428; */
+	background:url("images/background.jpg") no-repeat center center fixed; 
 	background-size: cover;
 }
 body{
@@ -19,7 +21,7 @@ nav {
 	height:fit-content;
 	background-color:black;
 	text-align: center;	
-	font:15px square;
+	font:1em square;
 }
 nav a{
 	color:white;
@@ -70,15 +72,15 @@ p{
 }
 h1{
 	text-align:center;
-	font:1.5em square;
+	font:1em square;
 }
 h2{
 	text-align:center;	
-	font: 1.1em square;
+	font: 1em square;
 }
 h3{
 	text-align:center;
-	font:2em monospace;
+	font:1em monospace;
 }
 .background{
 	z-index:-1;	
@@ -127,6 +129,7 @@ main{
 	font-family:square;
 }
 .workmap p{
+	font-size:0.9em;
 	text-align:left;
 	width:140px;
 }
@@ -160,7 +163,17 @@ article h1, article h2, article p{
 }
 article p{
 	text-align:justify;
-	font-size:14px;
+	font-size:1em;
+}
+article ul{
+	list-style-type: decimal-leading-zero;
+
+}
+#goTop {
+	color:red;
+	bottom:0%;
+	left:95%;
+	position:fixed;
 }
 @media screen and (max-width:1000px){
 	article {
