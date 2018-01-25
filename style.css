@@ -12,8 +12,6 @@ html {
 	height:100%;
 	min-height:100%;
 }
-
-
 body{
 	margin:0;
 	min-height:100%;
@@ -128,6 +126,7 @@ main{
 }
 .workmap {
 	margin:auto;
+	padding:0px 1%;
 	width:fit-content;
 }
 .workmap a{
@@ -140,7 +139,6 @@ main{
 }
 @media screen and (max-width:450px){
 	.workmap{ 
-		width:310px;
 	}
 	.workmap p{
 		width:110px;
