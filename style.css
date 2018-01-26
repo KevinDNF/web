@@ -7,13 +7,13 @@ html {
 	font:1rem source;
 	color:white;
 	background-color:#222428;
-		height:100vh;
+	background:url("images/background.jpg") no-repeat center center fixed; 
+	background-size: cover; 
+	height:100%;
 }
 body{
 	margin:0;
-	background:url("images/background.jpg") no-repeat center center fixed; 
-	background-size: cover; 
-	min-height:100vh;
+	min-height:100%;
 }
 nav {
 	border-width:1px;
