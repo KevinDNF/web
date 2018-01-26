@@ -7,12 +7,12 @@ html {
 	font:1rem source;
 	color:white;
 	background-color:#222428;
-	background:url("images/background.jpg") no-repeat center center fixed; 
-	background-size: cover; 
-	height:100vh;
+		height:100vh;
 }
 body{
 	margin:0;
+	background:url("images/background.jpg") no-repeat center center fixed; 
+	background-size: cover; 
 	min-height:100vh;
 }
 nav {
