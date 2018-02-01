@@ -10,6 +10,7 @@ html {
 }
 body{
 	margin:0;
+	padding-bottom:500px;
 }
 a{
 	text-decoration:none;
@@ -68,21 +69,37 @@ main{
 	width:60%;
 	margin:auto;
 }
+.workmap h2{
+	text-align:center;
+	padding-bottom:15px;
+}
 .workmap ul{
 	list-style-type:none;
 	display:inline-table;
-	padding:19px auto;
+	padding-left:0;
+	padding:0;
+	margin:0;
 }
 .workmap li{
-	padding-top:12px;
+	padding:10px;
+	box-sizing:border-box;
+	margin:16px;
+	width:140px;
+	height:180px;
+	border-style:solid;
+	border-width:1px;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+.workmap li:hover{
+	border-width:1px;
+	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
 }
 .workmap{
 	margin:auto;
-	padding:0px 1%;
 	width:fit-content;
-}
-.workmap p{
-	width:140px;
+	display:flex;
+	-webkit-flex-flow:row wrap;
+	justify-content:space-around;
 }
 .profile {
 	margin:auto;
