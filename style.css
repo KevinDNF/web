@@ -29,7 +29,7 @@ h2{
 nav{
 	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
 	color:white;
-	background-color:black;
+	background-color:#1b4377;
 	position:fixed;
 	width:100%;
 	position:sticky;
@@ -144,7 +144,7 @@ main{
 #banner h1{
 	padding:10px;
 	border-style:none;
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0, 36, 74, 0.4);;
 	position:relative;
 	top:60px;
 }
