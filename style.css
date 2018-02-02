@@ -50,14 +50,16 @@ nav li{
 	list-style:none;
 }
 nav a{
+	box-sizing:border-box;
 	margin:0px 20px;
-	padding:1px 10px;
 	text-decoration:none;
 	color:white;
 }
-nav a:hover{
-	color:black;
-	background-color:white;
+nav img{
+	padding:3px 10px;
+}
+nav img:hover{
+	background-color:#1f3360;
 }
 #banner{
 	height:auto;
