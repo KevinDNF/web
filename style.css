@@ -54,6 +54,7 @@ nav li{
 	list-style:none;
 }
 nav a{
+	vertical-align:middle;
 	box-sizing:border-box;
 	margin:0px 2%;
 	text-decoration:none;
@@ -75,12 +76,7 @@ main{
 	width:60%;
 	margin:auto;
 }
-@media screen and (max-width:1700px){
-	main{
-		width:80%;
-	}
 
-}
 .workmap h2{
 	text-align:center;
 	padding-bottom:15px;
@@ -112,6 +108,33 @@ main{
 	display:flex;
 	-webkit-flex-flow:row wrap;
 	justify-content:space-around;
+}
+@media screen and (max-width:1700px){
+	main{
+		width:80%;
+	}
+}
+@media screen and (max-width: 800px){
+	.workmap ul{
+		margin:5px;
+	}
+	.workmap li{
+		margin:0px 0px inherit;
+	}
+}
+@media screen and (max-width:520px){
+	#react{
+		display:none;
+	}
+}
+@media screen and (max-width:400px){
+	main{
+		margin:10px;
+		width:93%;
+	}
+	.workmap ul{
+		margin:0px;
+	}
 }
 .profile {
 	margin:auto;
