@@ -36,9 +36,13 @@ nav{
 	top:0px;
 	text-align:center;
 	font-size:1.2em;
+
+	/* display:flex;
+	-webkit-flex-flow:row wrap;
+	justify-content:space-around; */
 }
 nav img{
-	margin:3px 0px;
+	margin:4px 0px;
 	vertical-align:middle;
 }
 nav ul{
@@ -51,7 +55,7 @@ nav li{
 }
 nav a{
 	box-sizing:border-box;
-	margin:0px 20px;
+	margin:0px 2%;
 	text-decoration:none;
 	color:white;
 }
