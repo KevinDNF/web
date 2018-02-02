@@ -10,7 +10,6 @@ html {
 }
 body{
 	margin:0;
-	padding-bottom:500px;
 }
 a{
 	text-decoration:none;
@@ -27,6 +26,7 @@ h2{
 	font-size:1.1em;
 }
 nav{
+	z-index:1;
 	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
 	color:white;
 	background-color:#1b4377;
@@ -124,9 +124,10 @@ main{
 	}
 }
 @media screen and (max-width:520px){
-	#react{
+	.react{
 		display:none;
 	}
+
 }
 @media screen and (max-width:400px){
 	main{
@@ -167,7 +168,11 @@ main{
 	padding-left:15px;
 	text-align:left;
 }
-
+@media screen and (max-width:700px){
+	.profile img{
+		height:130px;
+	}
+}
 #banner {
 	background-image:url("images/banner.png");
 	background-size:cover;
