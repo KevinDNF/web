@@ -89,7 +89,7 @@ main{
 .workmap li{
 	padding:10px;
 	box-sizing:border-box;
-	margin:16px;
+	margin:16px auto;
 	width:140px;
 	height:180px;
 	border-style:solid;
