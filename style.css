@@ -75,6 +75,12 @@ main{
 	width:60%;
 	margin:auto;
 }
+@media screen and (max-width:1700px){
+	main{
+		width:80%;
+	}
+
+}
 .workmap h2{
 	text-align:center;
 	padding-bottom:15px;
@@ -84,7 +90,7 @@ main{
 	display:inline-table;
 	padding-left:0;
 	padding:0;
-	margin:0;
+	margin:12px;
 }
 .workmap li{
 	padding:10px;
