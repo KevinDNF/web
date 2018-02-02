@@ -44,6 +44,7 @@ nav{
 nav img{
 	margin:4px 0px;
 	vertical-align:middle;
+	background-color:inherit;
 }
 nav ul{
 	margin:0px;
@@ -63,8 +64,8 @@ nav a{
 nav img{
 	padding:3px 10px;
 }
-nav img:hover{
-	background-color:#1f3360;
+nav a:hover{
+	background-color:#0c3c7b;
 }
 #banner{
 	height:auto;
