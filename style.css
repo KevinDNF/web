@@ -48,6 +48,7 @@ nav a{
 nav a:hover{
 	box-shadow:inset 0px 1px 20px 1px rgba(0,0,0,0.2);
 	background-color:#4b5f7b;
+	color:white;
 }
 nav a:active{
 	background-color:#3f6daf;
