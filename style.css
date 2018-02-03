@@ -46,10 +46,11 @@ nav a{
 	padding: 9px 10px 13px 0px;
 } 
 nav a:hover{
+	box-shadow:inset 0px 1px 20px 1px rgba(0,0,0,0.2);
 	background-color:#4b5f7b;
 }
 nav a:active{
-	background-color:#829fc7;
+	background-color:#3f6daf;
 }
 nav img{
 	height:22px;
@@ -73,6 +74,10 @@ nav li{
 	}
 	nav span{
 		display:none;
+	}
+	nav img{
+		height:26px;
+		margin:0;
 	}
 }
 a {
