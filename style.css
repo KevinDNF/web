@@ -1,6 +1,4 @@
-@font-face{font-family: square;	src: url(fonts/sq.otf); }
 @font-face{font-family: roboto;	src: url(fonts/roboto-slab.regular.ttf); }
-@font-face{font-family: roboto; font-weight:200;	src: url(fonts/roboto-slab.light.ttf); }
 @font-face{font-family: source; src: url(fonts/SourceSansPro-Regular.otf); }
 
 html {
@@ -11,40 +9,53 @@ html {
 body{
 	margin:0;
 }
-a{
-	text-decoration:none;
-	color:inherit;
+#banner{
+	height:auto;
+	max-height:300px;
+	overflow:hidden;
+	background-color:black;
+	background-image:url("images/banner.png");
+	background-size:cover;
+	background-position:center;
+	height:200px;
+	color:white;
+	text-align:center;
 }
-a:hover{
-	font-width:bold;
-}
-h1{
-	font-size:1.3em;
-	border-bottom-style:solid;
-}
-h2{
-	font-size:1.1em;
+#banner h1{
+	font:1.3em roboto;
+	padding:10px;
+	border-style:none;
+	background-color:rgba(49,54,61, 0.4);
+	position:relative;
+	top:60px;
 }
 nav{
 	z-index:1;
 	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
-	color:white;
-	background-color:#1b4377;
-	position:fixed;
+	background-color:#31363D;
 	width:100%;
 	position:sticky;
 	top:0px;
 	text-align:center;
-	font-size:1.2em;
-
-	/* display:flex;
-	-webkit-flex-flow:row wrap;
-	justify-content:space-around; */
+	font:1em source;
+}
+nav a{
+	vertical-align:middle;
+	margin:0px 3%;
+	color:white;
+	padding: 9px 10px 13px 0px;
+} 
+nav a:hover{
+	background-color:#4b5f7b;
+}
+nav a:active{
+	background-color:#829fc7;
 }
 nav img{
+	height:22px;
 	margin:4px 0px;
 	vertical-align:middle;
-	background-color:inherit;
+	padding:3px 10px;
 }
 nav ul{
 	margin:0px;
@@ -53,31 +64,31 @@ nav ul{
 nav li{
 	display:inline;
 	list-style:none;
+	height:100%;
+	width:fit-content;
 }
-nav a{
-	vertical-align:middle;
-	box-sizing:border-box;
-	margin:0px 2%;
+@media screen and (max-width:520px){
+	nav a{
+		padding: 9px 0px 13px 0px;
+	}
+	nav span{
+		display:none;
+	}
+}
+a {
 	text-decoration:none;
-	color:white;
 }
-nav img{
-	padding:3px 10px;
+h1{
+	font-size:1.3em;
+	border-bottom-style:solid;
 }
-nav a:hover{
-	background-color:#0c3c7b;
-}
-#banner{
-	height:auto;
-	max-height:300px;
-	overflow:hidden;
-	background-color:black;
+h2{
+	font-size:1.1em;
 }
 main{
 	width:60%;
 	margin:auto;
 }
-
 .workmap h2{
 	text-align:center;
 	padding-bottom:15px;
@@ -123,12 +134,7 @@ main{
 		margin:0px 0px inherit;
 	}
 }
-@media screen and (max-width:520px){
-	.react{
-		display:none;
-	}
 
-}
 @media screen and (max-width:400px){
 	main{
 		margin:10px;
@@ -173,19 +179,4 @@ main{
 		height:130px;
 	}
 }
-#banner {
-	background-image:url("images/banner.png");
-	background-size:cover;
-	background-position:center;
-	height:200px;
-	
-	color:white;
-	text-align:center;
-}
-#banner h1{
-	padding:10px;
-	border-style:none;
-	background-color:rgba(0, 36, 74, 0.4);;
-	position:relative;
-	top:60px;
-}
+
