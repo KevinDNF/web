@@ -82,6 +82,10 @@ nav li{
 }
 a {
 	text-decoration:none;
+	color:#2383ea;
+}
+a:hover{
+	color:#1200ff;
 }
 h1{
 	font-size:1.3em;
@@ -93,6 +97,8 @@ h2{
 main{
 	width:60%;
 	margin:auto;
+	padding-top:20px;
+	font-family:helvetica;
 }
 .workmap h2{
 	text-align:center;
