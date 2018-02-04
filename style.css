@@ -4,7 +4,7 @@
 html {
 	font:1rem;
 	color:black;
-	background-color:white;
+	background-color:#ededed;
 }
 body{
 	margin:0;
@@ -191,4 +191,42 @@ main{
 		height:130px;
 	}
 }
+h2{
+	margin-left:20px;
+}
+.work{
+	display:flex;
+	margin:0;
+	flex-flow:wrap;
+}
+.work a{
+	color:black;
+	display:block;
 
+	flex-grow:1;
+	flex-basis:140px;
+	flex-shrink:1;
+}
+.card{
+	overflow:hidden;
+	height:200px;
+	padding:10px 10px;
+	box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.2);
+	background-color:white;
+	margin:20px 20px 0 20px;
+	border-style:solid;
+}
+.card:hover {
+	box-shadow: 3px 2px 20px 4px rgba(0,0,0,0.2);
+	border-width:4px;
+}
+.card img{
+	float:right;
+	height:100%
+}
+@media screen and (max-width:650px){
+	.card{
+		margin-left:3px;
+		margin-right:3px;
+	}
+}
