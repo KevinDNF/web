@@ -21,6 +21,7 @@ body{
 	height:200px;
 	color:white;
 	text-align:center;
+	z-index:2;
 }
 #banner h1{
 	font:1.3em roboto;
@@ -29,9 +30,9 @@ body{
 	background-color:rgba(49,54,61, 0.4);
 	position:relative;
 	top:60px;
+	z-index:2;
 }
 nav{
-	z-index:1;
 	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
 	background-color:#31363D;
 	width:100%;
@@ -39,6 +40,7 @@ nav{
 	top:0px;
 	text-align:center;
 	font:1em source;
+	z-index:2;
 }
 nav a{
 	vertical-align:middle;
@@ -95,7 +97,7 @@ h1{
 }
 h2{
 	font-size:1.1em;
-	margin-left:20px;
+	margin-left:10px;
 }
 main{
 	width:60%;
@@ -209,3 +211,18 @@ main{
 	height:25px;	
 	margin-right:5px;
 }
+aside{
+	position:fixed;
+	width:200px;
+	height:100%;
+	top:0;
+	bottom:0;
+	padding:10px;
+	background-color:black;
+	z-index:1;
+	display:none;
+}
+article{
+	text-align:justify;
+}
+
