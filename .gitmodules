@@ -1,3 +1,3 @@
 [submodule "art/minimal"]
-	path = art/minimal
+	path = design/minimal
 	url = https://github.com/KevinDNF/minimal
