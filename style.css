@@ -96,8 +96,10 @@ h1{
 	border-bottom-style:solid;
 }
 h2{
-	font-size:1.1em;
-	margin-left:10px;
+	font-size:1.2em;
+}
+h3{
+	font-size:1em;
 }
 main{
 	width:60%;
