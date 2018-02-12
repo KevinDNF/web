@@ -177,7 +177,7 @@ main{
 }
 .card{
 	overflow:hidden;
-	height:200px;
+	height:150px;
 	padding:10px 10px;
 	box-shadow: 3px 2px 13px 0px rgba(0,0,0,0.2);
 	background-color:white;
