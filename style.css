@@ -192,6 +192,9 @@ main{
 	float:right;
 	height:100%
 }
+.card h3{
+	margin-top:5px;
+}
 @media screen and (max-width:650px){
 	.card{
 		margin-left:3px;
