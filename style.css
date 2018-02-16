@@ -109,8 +109,6 @@ main{
 main img{
 	display:inline;
 	width:60%;
-	float:left;
-	vertical-align:top;
 	margin:0px 10px 10px 0;
 }
 @media screen and (max-width:1700px){
