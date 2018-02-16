@@ -2,13 +2,12 @@
 @font-face{font-family: source; src: url(fonts/SourceSansPro-Regular.otf); }
 
 html {
-	font:1rem;
+	font:1rem helvetica;
 	color:black;
 	background-color:#ededed;
 }
 body{
 	margin:0;
-	margin-bottom:100px;
 }
 #banner{
 	height:auto;
@@ -106,7 +105,6 @@ main{
 	width:60%;
 	margin:auto;
 	padding-top:20px;
-	font-family:helvetica;
 }
 main img{
 	display:inline;
@@ -250,7 +248,46 @@ aside{
 article{
 	text-align:justify;
 }
-code{
-	padding:10px;
+.bash{
 	background-color:darkgray;
+	width:100%;
+	padding:10px;	
+}
+.bash span{
+	color:darkred;
+}
+.html{
+	background-color:darkgray;
+	width:100%;
+	padding:10px;	
+}
+.html span{
+	display:block;
+	color:purple;
+}
+footer{
+	text-align:center;
+	margin-top:60px;
+	padding-bottom:10px;
+	background-color:#fcfcfc;
+	border-top-style:solid;
+	border-width:3px;
+	overflow:hidden;
+	box-shadow:inset 0 13px 20px 1px rgba(154, 154, 154, 0.58);
+}
+footer h1{
+	margin:5px;
+	font-size:1.1em;
+	border-bottom-style:none;
+}
+footer img{
+	height:50px;
+	margin:auto 10px;
+}
+footer img:hover{
+	border-style:solid;
+	border-width:2px;
+	color:black;
+	box-shadow:0 13px 20px 1px rgba(154, 154, 154, 0.58);
+	border-radius: 44px;
 }
