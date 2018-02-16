@@ -113,51 +113,11 @@ main img{
 	vertical-align:top;
 	margin:0px 10px 10px 0;
 }
-.workmap h2{
-	text-align:center;
-	padding-bottom:15px;
-}
-.workmap ul{
-	list-style-type:none;
-	display:inline-table;
-	padding-left:0;
-	padding:0;
-	margin:12px;
-}
-.workmap li{
-	padding:10px;
-	box-sizing:border-box;
-	margin:16px auto;
-	width:140px;
-	height:180px;
-	border-style:solid;
-	border-width:1px;
-	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
-}
-.workmap li:hover{
-	border-width:1px;
-	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
-}
-.workmap{
-	margin:auto;
-	width:fit-content;
-	display:flex;
-	-webkit-flex-flow:row wrap;
-	justify-content:space-around;
-}
 @media screen and (max-width:1700px){
 	main{
 		width:80%;
 	}
 	
-}
-@media screen and (max-width: 800px){
-	.workmap ul{
-		margin:5px;
-	}
-	.workmap li{
-		margin:0px 0px inherit;
-	}
 }
 @media screen and (max-width: 850px){
 	main img{
@@ -169,9 +129,6 @@ main img{
 	main{
 		margin:10px;
 		width:93%;
-	}
-	.workmap ul{
-		margin:0px;
 	}
 }
 .work{
