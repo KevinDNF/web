@@ -144,13 +144,38 @@
 	</div>
 
 	<h1>About</h1>
-	<img id="profile" src="images/profile.jpg" alt="profile image">
+	
+	<picture>
+		<source srcset="images/profile.png">
+		<img id="profile" src="images/profile.jpg" alt="profile image">
+	</picture>
+
 	<h2>UP849868</h2>
 	<div class=icons>
-		<a href="https://github.com"><img src="images/icons/github.svg" alt="github"></a>
-		<a href="https://instagram.com"><img src="images/icons/instagram.svg" alt="instagram"></a>
-		<a href="https://facebook.com"><img  src="images/icons/facebook.svg" alt="facebook"></a>
-		<a href="https://linkedin.com"><img  src="images/icons/linkedin.svg" alt="linkedin"></a>
+		<a href="https://github.com">
+			<picture>
+				<source srcset="images/icons/github.svg">
+				<img src="images/icons/github.png" alt="github">
+			<picture>
+		</a>
+		<a href="https://instagram.com">
+			<picture>
+				<source srcset="images/icons/instagram.svg">
+				<img src="images/icons/instagram.png" alt="instagram">
+			</picture>
+		</a>
+		<a href="https://facebook.com">
+			<picture>
+				<source srcset="images/icons/facebook.svg">
+				<img  src="images/icons/facebook.png" alt="facebook">
+			</picture>
+		</a>
+		<a href="https://linkedin.com">
+			<picture>
+				<source srcset="images/icons/linkedin.svg">
+				<img  src="images/icons/linkedin.png" alt="linkedin">
+			</picture>
+		</a>
 	</div>
 	<p> I am a Computer Science student at Portsmouth University curently doing my first year.
 		I love learning new things and like to push myself further every day.
@@ -160,10 +185,18 @@
 <footer>
 	<h1>Hey! I'm clean html/css. Validate me here!</h1>
 	<a href="https://validator.w3.org/check?uri=referer" target="_blank">
-		<img src="images/icons/html5.svg" alt="HTML Validator">
+		<picture>
+			<source srcset="images/icons/html5.svg">
+			<source srcset="images/icons/html5.png">
+			<img src="images/icons/html5.jpg" alt="HTML Validator">
+		</picture>
 	</a>
 	<a href="https://jigsaw.w3.org/css-validator/check/referer"
 	target="_blank">
-	<img src="images/icons/css3.svg" alt="CSS Validator">
+		<picture>
+			<source srcset="images/icons/css3.svg">
+			<source srcset="images/icons/css3.png">
+			<img src="images/icons/css3.jpg" alt="CSS Validator">
+		</picture>
 	</a>
 </footer>
