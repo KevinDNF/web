@@ -204,20 +204,29 @@ article{
 }
 .bash{
 	background-color:darkgray;
-	width:100%;
+	width:90%;
 	padding:10px;	
+	margin:auto;
 }
 .bash span{
 	color:darkred;
 }
 .html{
-	background-color:darkgray;
-	width:100%;
+	background-color:#d2d1ec;
+	width:90%;
 	padding:10px;	
+	margin:auto;
 }
 .html span{
 	display:block;
-	color:purple;
+	color:#0021b3;
+}
+.html em{
+	color:#0021b3;
+	font-style:normal;
+}
+.html p{
+	margin:3px;
 }
 footer{
 	text-align:center;
