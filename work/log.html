@@ -51,7 +51,7 @@
 		database design.
 		The virtual machine was running a version of linux and we had to access
 		it via SSH using a shell chrome extension. This was my first
-		interaction with a linux shell I experimented with a couple of
+		interaction with a linux shell so I experimented with a couple of
 		commands.
 		<div class="html">
 			<p><em>help</em> "Displays the possible commands"
@@ -63,18 +63,114 @@
 			Has lots of parameters like -a which shows invisible
 			files/directories."
 		</div>
-		<p>One of my goals for this
-		first year was to learn to use and how a linux os operates.
+		<h1>Website awards</h1>
+		<p>We also filled out a form of what we think are the best and worst
+		website we have seen throught out the web. I nominated <a
+			 href="www.liamwong.com">LiamWong.com</a> since I really liked the
+		 design and aesthetics he has gone for in his web portfolio. 
+	  <p>Navigating github I also found some interesting web portfolio that I
+		could use as reference for when I will be designing my website for the
+		coursework.
+		<a href="todperry.ninja">TodPerry.ninja</a> caught my attention, being
+		a bash terminal simulation with vim editing a python file. I really
+		liked the idea and execution since you could use vim commands and
+		interact with the shell enviroment. A really unique and well
+		designed website.
+
 		<h1>HTML 5</h1>
-		<p>This week we where taught that the current html standard is HTML 5
-		which has been around for years. In HTML 5 every html document needs to
-		have at the top: 
+		<p>When creating a website the most basic languages used are HTML
+		and CSS. On the following weeks we were introduced to HTML and CSS more
+		specifically to HTML5, which has been taught for years and is the
+		current standard for HTML documents.
+		<p>HTML is the content part of the website, so all the writting and
+		semantic structure is defined on the HTML file. It is necessary that
+		this conventions are followed to avoid not following the correct
+		standards. 
+		<p>In our practicals we created our first HTML document and we learned that to show that
+		the .html document is written in HTML5 we had to use a special tag at
+		the top of the docuement so that browsers know what to expect.
+
 		<div class="html">
-			<span>
+			<em>
 			&lt;!DOCTYPE&gt;
-			</span>
+			</em>
 		</div>
-		<p> This ensures web browsers detect that HTML 5 is being used.
+		<p>I experimented with the tags I knew already and some other new
+		ones.
+		<div class="html">
+			
+		<p><em>&lt;p&gt; Hello world &lt;/p&gt; </em> Used for new paragraphs.
+		<p><em>&lt;h1&gt; Hello world &lt;/h1&gt; </em> Heading 1
+		<p><em>&lt;ol&gt; </em> Start of ordered list
+		<p><em>&lt;li&gt; Enumerated Item 1 &lt;li&gt;</em> Item
+		<p><em>&lt;li&gt; Enumerated Item 2 &lt;li&gt;</em> Item
+		<p><em>&lt;/ol&gt;</em> End of ordered list
+		</div>
+		
+		<p>They also covered some deprecated tags that we should avoid at all
+		cost. 
+		<div class="html">
+			<em>&lt;br&gt;</em>
+		</div>
+
+		<p>br was used for new lines, but we should need to use it since the
+		html file is the content of the webpage, if we want to have a larger
+		seperations between paragraphs we can do that via CSS.
+		<h2>Closing tags</h2>
+		<p>HTML is quite a curious language in which we can do completly wrong
+		and bad things and still have the page display the way we want it,
+		this is because browsers can work with bad code but they will
+		struggle with it... so its not recommended. 
+		<p>But one of the things that it is recommended is to ommit
+		unecessary closing tags. Like the closing  &lt;p&gt; is not always
+		necessary to writte since a new &lt;p&gt; tag will close previous
+		one. Google has a <a
+			 href="https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags">website</a> where they describe what kind of tags are ok
+		to ommit to have a smaller file size and easier to read. 
+
+		<p>Most of my
+		code will follow googles standard... so don't mark me down for
+		"missing closing tags" or stuff like that. U.U
+		<h1>CSS 3</h1>
+		<p>CSS is the styling of the webpage, how it looks and how it
+		reflows. There are two main ways of implementing css. 
+
+		<h2>Inline styling</h2>
+		<p>Using the style attribute inside a tag can add style to a specific
+		element. But by doing this we are styling each element
+		specifically, so really big documents will require a stupid amount
+		of time to correctly style.
+		<div class="html">
+			<em>&lt;p style:background-color=</em>"red"<em>;&gt;</em>Some text
+		</div>
+		<p>Which is why it is not recommended to use.
+
+		<h2>External Style Sheet</h2>
+		<p>We can style every element in a page by using an external style sheet,
+		which is usually a <em>something.css</em> containing css.
+		<div class="html">
+			<p>HTML
+			<p><em>&lt;p&gt;</em>Some text
+		</div>
+		<div class="html">
+			<p>CSS
+			<em>
+			<p>p{
+			<p>background-color:</em>red<em>;
+			<p>}
+			</em>
+		</div>
+		<p>This is really usefull as we can have 1 css file linked to many html
+		pages and have a consistent web design. So if we want to change one
+		thing on every page we only have to edit 1 file.
+		
+		<p>To link an style sheet file to an html document we have to use
+		the following line in our head section.
+		<div class="html">
+		<p><em>&lt;link rel=</em>"stylesheet"
+			<em>href=</em>"../style.css"<em>&gt;</em>
+		</div>
+		<p>Where "../style.css" is the path to the file.
 
 		<h1>Head</h1>
 		<p>Every documents needs a head section, in which important
@@ -99,12 +195,14 @@
 		stylesheets or javascript.
 
 		<h1>Semantic markup</h1>
+		<p>Semantic markup is essential to ensure that the webpage can be
+		read by screenreaders.
 			<div class="html">
 				<p><em>&lt;article&gt;</em>
 				<p><em>&lt;header&gt;</em>
 				<p><em>&lt;/header&gt;</em>
-				<p><em>&lt;main&gt;</em>
-				<p><em>&lt;/main&gt;</em>
+				<p><em>&lt;section&gt;</em>
+				<p><em>&lt;/section&gt;</em>
 				<p><em>&lt;footer&gt;</em>
 				<p><em>&lt;/footer&gt;</em>
 				<p><em>&lt;/article&gt;</em>
@@ -118,10 +216,22 @@
 				alt=</em>"github"<em>&gt;
 				<p>&lt;picture&gt;
 				</em>
-			</div>			
+			</div>
 
 		<h1>Accessibility</h1>
-		
+		<p>In our lecture and practical we were introduced to
+		accessibility. We looked at some not accesible websites and they
+		pointed at things we should take into consideration.
+
+		<h1>Standards</h1>	
+		<div class="html">
+			<p><em>body, article, section, nav, aside, header, footer.</em></p>
+		</div>
+
+		<h1>Relative and Absolute Links</h1>
+		<h2>Absolute links</h2>
+		<h2>Relative links</h2>
+		<h1>Advance CSS selectors</h1>
 </main>	
 <footer>
 	<h1>Hey! I'm clean html/css. Validate me here!</h1>

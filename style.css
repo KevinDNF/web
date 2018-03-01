@@ -215,7 +215,8 @@ article{
 	background-color:#d2d1ec;
 	width:90%;
 	padding:10px;	
-	margin:auto;
+	margin:5px auto;
+	font-family:monospace;
 }
 .html span{
 	display:block;
