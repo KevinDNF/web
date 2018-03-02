@@ -57,14 +57,14 @@
 		interaction with a linux shell so I experimented with a couple of
 		commands.
 		<div class="html">
-			<p><em>help</em> "Displays the possible commands"
-			<p><em>man</em> program "Display a program's manual" 
-			<p><em>cd</em> path "Changes directory to a path. If no path is set it
-			changes back to the home folder."
-			<p><em>mkdir</em> path "Makes a directory."
-			<p><em>ls</em> "Lists the files and directories in the current directory.
+			<p>help <span>"Displays the possible commands"</span>
+			<p>man <em>program</em> <span>"Display a program's manual" </span>
+			<p>cd <em>path</em> <span>"Changes directory to a path. If no path is set it
+				changes back to the home folder."</span>
+			<p>mkdir <em>path</em> <span>"Makes a directory."</span>
+			<p>ls <span>"Lists the files and directories in the current directory.
 			Has lots of parameters like -a which shows invisible
-			files/directories."
+			files/directories."</span>
 		</div>
 		<h1>Website awards</h1>
 		<p>We also filled out a form of what we think are the best and worst
@@ -94,26 +94,25 @@
 		the top of the docuement so that browsers know what to expect.
 
 		<div class="html">
-			<em>
 			&lt;!DOCTYPE html&gt;
-			</em>
 		</div>
 		<p>I experimented with the tags I knew already and some other new
 		ones.
 		<div class="html">
 			
-		<p><em>&lt;p&gt; Hello world &lt;/p&gt; </em> Used for new paragraphs.
-		<p><em>&lt;h1&gt; Heading 1 &lt;/h1&gt; </em> Heading 1
-		<p><em>&lt;ol&gt; </em> Start of ordered list
-		<p><em>&lt;li&gt; Enumerated Item 1 &lt;li&gt;</em> Item
-		<p><em>&lt;li&gt; Enumerated Item 2 &lt;li&gt;</em> Item
-		<p><em>&lt;/ol&gt;</em> End of ordered list
+			<p>&lt;p&gt; Hello world &lt;/p&gt; <span> Used for new
+				paragraphs.</span>
+			<p>&lt;h1&gt; Heading 1 &lt;/h1&gt; <span> Heading 1</span>
+			<p>&lt;ol&gt; <span> Start of ordered list</span>
+			<p>&lt;li&gt; Enumerated Item 1 &lt;li&gt;<span> Item</span>
+			<p>&lt;li&gt; Enumerated Item 2 &lt;li&gt;<span> Item</span>
+			<p>&lt;/ol&gt;<span> End of ordered list</span>
 		</div>
 		
 		<p>We also covered some deprecated tags that we should avoid at all
 		cost. 
 		<div class="html">
-			<em>&lt;br&gt;</em>
+			&lt;br&gt;
 		</div>
 
 		<p>br was used for new lines, but we shouldn't need to use it since the
@@ -152,7 +151,7 @@
 		specifically, so really big documents will require a stupid amount
 		of time to correctly style.
 		<div class="html">
-			<em>&lt;p style:background-color=</em>"red"<em>;&gt;</em>Some text
+			&lt;p style:background-color=<span>"red"</span>;&gt;Some text
 		</div>
 		<p>Which is why it is not recommended to use.
 
@@ -161,15 +160,13 @@
 		which is usually a <em>something.css</em> containing css.
 		<div class="html">
 			<p>HTML
-			<p><em>&lt;p&gt;</em>Some text
+			<p>&lt;p&gt;<span>Some text</span>
 		</div>
 		<div class="html">
 			<p>CSS
-			<em>
 			<p>p{
-			<p>background-color:</em>red<em>;
+			<p>background-color:<span>red</span>;
 			<p>}
-			</em>
 		</div>
 		<p>This is really usefull as we can have 1 css file linked to many html
 		pages and have a consistent web design. So if we want to change one
@@ -178,8 +175,8 @@
 		<p>To link an style sheet file to an html document we have to use
 		the following line in our head section.
 		<div class="html">
-		<p><em>&lt;link rel=</em>"stylesheet"
-			<em>href=</em>"../style.css"<em>&gt;</em>
+			<p>&lt;link rel=<span>"stylesheet"</span>
+			href=<span>"../style.css"</span>&gt;
 		</div>
 		<p>Where "../style.css" is the path to the file.
 
@@ -191,16 +188,16 @@
 		<p>This informatin is not showned in the page but it is used for
 		other necessary actions the webpage will perform.
 		<div class="html">
-			<p><em>&lt;meta charset=</em>"utf-8"<em>&gt;</em>
-			<p><em>&lt;meta name=</em>"author"
-			<em>content=</em>"UP849868"<em>&gt;</em>
-			<p><em>&lt;meta name=</em>"viewport"
-			<em>content=</em>"width=device-width,
-			initial-scale=1.0"<em>&gt;</em>
-			<p><em>&lt;link rel=</em>"shortcut icon" <em>type=</em>"image/png"
-			<em>href=</em>"../images/logoInverted.png"<em>&gt;</em>
-			<p><em>&lt;link rel=</em>"stylesheet"
-			<em>href=</em>"../style.css"<em>&gt;</em>
+			<p>&lt;meta charset=<span>"utf-8"</span>&gt;
+			<p>&lt;meta name=<span>"author"</span>
+			content=<span>"UP849868"</span>&gt;
+			<p>&lt;meta name=<span>"viewport"</span>
+			content=<span>"width=device-width,
+			initial-scale=1.0"</span>&gt;
+			<p>&lt;link rel=<span>"shortcut icon" </span>type=<span>"image/png"
+			</span>href=<span>"../images/logoInverted.png"</span>&gt;
+			<p>&lt;link rel=<span>"stylesheet"</span>
+			href=<span>"../style.css"</span>&gt;
 		</div>
 		<p>The <b>meta</b> tag are used for metadata.
 		<p>The <b>link</b> tag are used to link other files like
@@ -232,12 +229,11 @@
 
 		<h1>Pictures and images</h1>
 			<div class="html">
-				<p><em>&lt;picture&gt;
-				<p>&lt;source srcset=</em>"images/icons/github.svg"<em>&gt;
-				<p>&lt;img src=</em>"images/icons/github.png"<em>
-				alt=</em>"github"<em>&gt;
 				<p>&lt;picture&gt;
-				</em>
+				<p>&lt;source srcset=<span>"images/icons/github.svg"</span>&gt;
+				<p>&lt;img src=<span>"images/icons/github.png"</span>
+				alt=<span>"github"</span>&gt;
+				<p>&lt;picture&gt;
 			</div>
 
 		<h1>Accessibility</h1>
@@ -247,7 +243,7 @@
 
 		<h1>Standards</h1>	
 		<div class="html">
-			<p><em>body, article, section, nav, aside, header, footer.</em></p>
+			<p>body, article, section, nav, aside, header, footer.</p>
 		</div>
 
 		<h1>Relative and Absolute Links</h1>
