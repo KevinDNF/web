@@ -1,0 +1,6 @@
+[master f6775ec] img
+ 5 files changed, 16 insertions(+), 4 deletions(-)
+ delete mode 100644 images/icons/New Folder/about.png
+ delete mode 100644 images/icons/New Folder/book.png
+ delete mode 100644 images/icons/New Folder/brush.png
+ delete mode 100644 images/icons/New Folder/home.png
