@@ -92,7 +92,7 @@
 
 		<div class="html">
 			<em>
-			&lt;!DOCTYPE&gt;
+			&lt;!DOCTYPE html&gt;
 			</em>
 		</div>
 		<p>I experimented with the tags I knew already and some other new
@@ -100,22 +100,23 @@
 		<div class="html">
 			
 		<p><em>&lt;p&gt; Hello world &lt;/p&gt; </em> Used for new paragraphs.
-		<p><em>&lt;h1&gt; Hello world &lt;/h1&gt; </em> Heading 1
+		<p><em>&lt;h1&gt; Heading 1 &lt;/h1&gt; </em> Heading 1
 		<p><em>&lt;ol&gt; </em> Start of ordered list
 		<p><em>&lt;li&gt; Enumerated Item 1 &lt;li&gt;</em> Item
 		<p><em>&lt;li&gt; Enumerated Item 2 &lt;li&gt;</em> Item
 		<p><em>&lt;/ol&gt;</em> End of ordered list
 		</div>
 		
-		<p>They also covered some deprecated tags that we should avoid at all
+		<p>We also covered some deprecated tags that we should avoid at all
 		cost. 
 		<div class="html">
 			<em>&lt;br&gt;</em>
 		</div>
 
-		<p>br was used for new lines, but we should need to use it since the
+		<p>br was used for new lines, but we shouldn't need to use it since the
 		html file is the content of the webpage, if we want to have a larger
 		seperations between paragraphs we can do that via CSS.
+
 		<h2>Closing tags</h2>
 		<p>HTML is quite a curious language in which we can do completly wrong
 		and bad things and still have the page display the way we want it,
@@ -131,6 +132,13 @@
 		<p>Most of my
 		code will follow googles standard... so don't mark me down for
 		"missing closing tags" or stuff like that. U.U
+		<h2>Validators</h2>
+		<p>We were also introduced to validators, which are websites that
+		check your html and css code and return any errors/warnings it finds.
+		Similar to how an IDE will display errors.
+		<p>One of our requirements for our website is that it has to be valid
+		html so we are not allowed a single error.
+
 		<h1>CSS 3</h1>
 		<p>CSS is the styling of the webpage, how it looks and how it
 		reflows. There are two main ways of implementing css. 
@@ -172,9 +180,10 @@
 		</div>
 		<p>Where "../style.css" is the path to the file.
 
-		<h1>Head</h1>
-		<p>Every documents needs a head section, in which important
-		information is necessary like title, meta tags and links to
+		<h1>HTML Structure</h1>
+		<h2>Head</h2>
+		<p>Every html document has a head section, in which important
+		information is defined like title, meta tags and links to
 		stylesheets/scripts.
 		<p>This informatin is not showned in the page but it is used for
 		other necessary actions the webpage will perform.
@@ -193,11 +202,20 @@
 		<p>The <b>meta</b> tag are used for metadata.
 		<p>The <b>link</b> tag are used to link other files like
 		stylesheets or javascript.
+		
+		<p>The <b>charset</b> is the encoding used on the page. In this case
+		I'm using standard utf-8
+		<p><b>Viewport</b> is used for compatibility with mobile devices or
+		small screens. The viewport meta tag has tons of functionality and
+		will require further research to explain it fully.
+		<p>the <b> rel="shortcut icon"</b> is used to display a favicon image
+		in the tab's browsers.
 
-		<h1>Semantic markup</h1>
-		<p>Semantic markup is essential to ensure that the webpage can be
-		read by screenreaders.
-			<div class="html">
+		<h2>Body - Semantic Markup</h2>
+		Its important that the body of the html document follows good
+		semantic markup to ensure that the webpage can be read by
+		screenreaders.
+		<div class="html">
 				<p><em>&lt;article&gt;</em>
 				<p><em>&lt;header&gt;</em>
 				<p><em>&lt;/header&gt;</em>
@@ -207,6 +225,7 @@
 				<p><em>&lt;/footer&gt;</em>
 				<p><em>&lt;/article&gt;</em>
 		</div>	
+
 
 		<h1>Pictures and images</h1>
 			<div class="html">
@@ -231,7 +250,18 @@
 		<h1>Relative and Absolute Links</h1>
 		<h2>Absolute links</h2>
 		<h2>Relative links</h2>
+		<h1>Media Queries</h1>
+		<h1>Flex-Box</h1>
 		<h1>Advance CSS selectors</h1>
+		<h1>Video</h1>
+		<video controls id="video-container">
+			<source src="../videos/yetris.mp4" type="video/mp4">
+			<source src="../videos/yetris.mkv" type="video/mkv">
+			<source src="../videos/yetris.mpeg" type="video/mpeg">
+			<source src="../videos/yetris.webm" type="video/webm">
+				<track label="English" kind="subtitles" srclang="en" src="a.vtt"
+																												 default>
+		</video>
 </main>	
 <footer>
 	<h1>Hey! I'm clean html/css. Validate me here!</h1>
