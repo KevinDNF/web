@@ -218,14 +218,13 @@ article{
 	padding:10px;	
 	margin:5px auto;
 	font-family:monospace;
+	color:#0021b3;
 }
 .html span{
-	display:block;
-	color:#0021b3;
+	color:black;
 }
 .html em{
-	color:#0021b3;
-	font-style:normal;
+	color:#0551b3;
 }
 .html p{
 	margin:3px;
