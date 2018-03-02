@@ -216,6 +216,8 @@
 		semantic markup to ensure that the webpage can be read by
 		screenreaders.
 		<div class="html">
+				<p>&lt;nav&gt;
+				<p>&lt;/nav&gt;
 				<p>&lt;article&gt;
 				<p>&lt;header&gt;
 				<p>&lt;/header&gt;
@@ -225,32 +227,91 @@
 				<p>&lt;/footer&gt;
 				<p>&lt;/article&gt;
 		</div>	
-
+		<p>A well defined website will have a good semantic structure meaning
+		each part of the website has its corresponding tag. So the header
+		elements will be enclosed in a header tag, the main will be enclosed in
+		the main.
+		<p><b>Articles</b> are used for blog post like documents and other form
+		of repetitive content.
+		<p><b>Sections</b> are sections inside articles or just the main
+		<p><b>Main</b> is where the main content of the webpage goes to
+		<p><b>Footer and Header</b> is as standard documents have header and
+		footer. The important part of these elements is that the html document
+		will have a header and footer and articles will have a header and
+		footer meaning we can utilized them in many different other semantic
+		tags.
+		<p><b>Nav</b> is used for navigation of the website.
 
 		<h1>Pictures and images</h1>
+		<p>On html5 the introduction of the <b>picture</b> tag was quite a big
+			change to the image world, since before it was the only way of
+			implementing images.
+			<p>The <b>img</b> tag is used to add an image to a webpage. This can
+			be of any image format and is essential that it contains a good
+			descriptive alternative tag. This alternative text will be displayed
+			if the image fails to load and has been a html requirement to avoid
+			having unwelcoming sites to screenreaders.
+			<p>Being able to add images is great but with the introduction of the
+			<b>Picture</b> tag we can do a lot more. With the picture tag we can
+			add many sources to a single image meaning that if one of them fails
+			to load because it's not supported or other reason then a second
+			source will load. This can be achieved using the type tag inside the
+			souce tag.
+			<p>Instead of just defining different sources in case it fails there
+			is also the feature of using media queries within the <b>picture</b>
+			tag so that a different image loads at a specific screen size or
+			other queries.
+			
 			<div class="html">
 				<p>&lt;picture&gt;
-				<p>&lt;source srcset=<span>"images/icons/github.svg"</span>&gt;
+				<p>&lt;source srcset=<span>"images/icons/github.svg"</span>
+				type=<span>"image/svg+xml"</span> &gt;
 				<p>&lt;img src=<span>"images/icons/github.png"</span>
 				alt=<span>"github"</span>&gt;
 				<p>&lt;picture&gt;
 			</div>
 
+			<p>The crucial part of the picture tag is that it must contain either
+			a media query or a type tag. 
+
 		<h1>Accessibility</h1>
-		<p>In our lecture and practical we were introduced to
-		accessibility. We looked at some not accesible websites and they
-		pointed at things we should take into consideration.
-
+		<p>I have mentioned before that we must follow the standards and be 
+		friendly to screen readers, all of this falls
+		into the category of accessibility which is a massive topic.
+		<p>Accessibility is allowing everyone to use the website which includes
+		people with many problems to use it. So how can we ensure that a blind
+		person can use our website? We use a variety of tools.
+		<h2>Video transcripts</h2>
+		<p>People with difficulty hearing whats happening on the screen might
+		require some visual feedback from the video to fully understand what is
+		happening. Which is why it is important to add subtitles to videos via
+		a video transcript file, <em>transcript.vtt</em>. I have an example of
+		this down below.
+		<h2>Aria-label</h2>
+		<p>Aria labels can be used to show how certain buttons are used.
+		<h2>Colour</h2>
+		<p>Colour choices are crucial for everyone to see. I have carefully
+		selected the colours on this website to be as accessible as possible. A
+		good example of a badly designed colourscheme can be seen in my first
+		design of this website.
+		<h2>Text-size</h2>
+		<p>Font size is also a crucial factor. Usually you want to have it
+		1rem to avoid changing the font size of the user preference.
 		<h1>Standards</h1>	
-		<div class="html">
-			<p>body, article, section, nav, aside, header, footer.</p>
-		</div>
-
 		<h1>Relative and Absolute Links</h1>
 		<h2>Absolute links</h2>
+		Absolute Links are usually bad since they are a direct path to a
+		devices directory. Something like
+		<em>/home/MyCoolUserName/image.png</em>
+		Would mean that it only works on that specific device
 		<h2>Relative links</h2>
+		Relative links are hyperlinks that are relative to the position of the
+		file thats reading it. So if I place a file with <em>hello/world.png</em>
+		then the image will only work on that specific device.
 		<h1>Media Queries</h1>
+		Try resizing the page. What happends to the navigation bar.
 		<h1>Flex-Box</h1>
+		Is good. And example of this can be seen at my homepage.
 		<h1>Advance CSS selectors</h1>
 		<h1>Video</h1>
 		<video controls>
