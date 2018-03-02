@@ -109,6 +109,7 @@ main{
 main img{
 	display:inline;
 	margin:0px 10px 10px 0;
+	width:100%;
 }
 @media screen and (max-width:1700px){
 	main{
