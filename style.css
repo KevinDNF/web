@@ -255,3 +255,6 @@ footer img:hover{
 	box-shadow:0 13px 20px 1px rgba(154, 154, 154, 0.58);
 	border-radius: 44px;
 }
+video{
+	width:100%;
+}
