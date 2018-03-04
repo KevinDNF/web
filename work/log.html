@@ -5,12 +5,13 @@
 	<link rel="shortcut icon" type="image/png" href="../images/logoInverted.png">
 	<link rel="stylesheet" href="../style.css">
 	<title>UP849868</title>
+	<script src="../script.js"></script>
 
-<div id="banner">
+<header>
 	<h1>Log Book</h1>
-</div>
+</header>
 
-<nav>
+<nav id="navbar">
 	<ul>
 		<li>
 			<a href="../index.html" aria-label="back button">
@@ -23,24 +24,68 @@
 				</span>
 			</a>
 		</li>
+		<li>
+			<button type="button" onclick="toggleSidebar()" aria-label"menu
+			button">
+				<picture>
+					<source srcset="../images/icons/menu.svg" type="image/svg+xml">
+					<img src="../images/icons/menu.png" alt="Menu">
+				</picture>
+				<span>
+					Menu
+				</span>
+			</button>
+		</li>
 	</ul>
 </nav>
 
-<aside>
+<aside id="content">
+	<nav>
 	<h2>Contents</h2>
 		<ul>
-			<li><a href="#1">Introduction</a></li>
+			<li><a onclick="toggleSidebar()" href="#1">Introduction</a></li>
 			<li><a href="#2">Virtual Machine</a></li>
 			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#5"></a></li>
-			<li><a href="#6"></a></li>
-			<li><a href="#7"></a></li>
-			<li><a href="#8"></a></li>
-			<li><a href="#9"></a></li>
-			<li><a href="#10"></a></li>
-			<li><a href="#20"></a></li>
-			<li><a href="#21"></a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
+			<li><a href="#4">Text Editors</a></li>
 		</ul>
+	</nav>
 </aside>		
 <main>
 		<h1 id="1">Introduction</h1>
@@ -94,7 +139,7 @@
 		the top of the docuement so that browsers know what to expect.
 
 		<div class="html">
-			&lt;!DOCTYPE html&gt;
+			<p>&lt;!DOCTYPE html&gt;
 		</div>
 		<p>I experimented with the tags I knew already and some other new
 		ones.

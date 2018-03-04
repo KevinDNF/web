@@ -5,12 +5,13 @@
 	<link rel="shortcut icon" type="image/png" href="../images/logoInverted.png">
 	<link rel="stylesheet" href="../style.css">
 	<title>UP849868</title>
+	<script src="../script.js"></script>
 
-<div id="banner">
+<header>
 	<h1>Astrodroid</h1>
-</div>
+</header>
 
-<nav>
+<nav id="navbar">
 	<ul>
 		<li>
 			<a href="../index.html" aria-label="back button">
@@ -23,14 +24,28 @@
 				</span>
 			</a>
 		</li>
+		<li>
+			<button type="button" onclick="toggleSidebar()" aria-label"menu
+			button">
+				<picture>
+					<source srcset="../images/icons/menu.svg" type="image/svg+xml">
+					<img src="../images/icons/menu.png" alt="Menu">
+				</picture>
+				<span>
+					Menu
+				</span>
+			</button>
+		</li>
 	</ul>
 </nav>
 
-<aside>
-<h2>Contents</h2>
-		<ul>
-			<li><a href="#1">Abstract</a></li>
-		</ul>
+<aside id="content">
+	<nav>
+			<h2>Contents</h2>
+			<ul>
+				<li><a href="#1">Abstract</a></li>
+			</ul>
+		</nav>
 </aside>
 
 <main>
