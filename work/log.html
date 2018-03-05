@@ -408,19 +408,66 @@ body > *{
 		that this website is reactive to all screen sizes. Try resizing this
 		page and see what happends to the navigation.
 
-		<h1>Advance CSS selectors</h1>
+		<h1>CSS Selectors</h1>
+		<p>CSS works by selecting different tags and styling them as we wish.
+		
+<pre class="html">
+
+
+&lt;p&gt; 
+  Text 1
+&lt;/p&gt; 
+
+&lt;main&gt;
+  &lt;p&gt; 
+   Text 2 
+  &lt;/p&gt; 
+&lt;/main&gt;
+
+</pre>
+
+<pre class="css">
+
+
+p{
+  color:red;
+}
+
+main p{
+  color:blue;
+}
+
+</pre>
+<p>In this example we have a <b>p</b> tag inside main and another one
+outside of main. If we want to access all of the p tags we can just use a
+simple <em>p{ }</em> which will apply the styling to all the p tags in the
+page.
+<p>But we can be more specific with the way to select what we want to
+style. In this case if we only want to style Text 2 which is inside the
+main tags we can use <em>main p { }</em> to select all the p tags inside
+the main tag.
+<p>
+		<h2>ID and Classes</h1>
+
+		<h2>Advance CSS selectors</h2>
 
 		<p>By creating this website I have encontered what you could considered
-		"advance css selectors" or just some of the less used but still really
-		powerfull.
+		"advance css selectors" or just some of the less used but still very
+		powerfull tools.
 
 		<pre class="css">
 
 
-body > *{
+body > *{ <span> 
   flex:<span>1 100%</span>;
 }
+
+
+div:not(.something){
+  background-color:red;
+}
 		</pre>
+		<p>This will select all the elements inside the body
 		<h1>Video</h1>
 		<pre class="html">
 
