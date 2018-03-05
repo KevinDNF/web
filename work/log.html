@@ -44,46 +44,21 @@
 	<h2>Contents</h2>
 		<ul>
 			<li><a onclick="toggleSidebar()" href="#1">Introduction</a></li>
-			<li><a href="#2">Virtual Machine</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
-			<li><a href="#4">Text Editors</a></li>
+			<li><a onclick="toggleSidebar()" href="#2">Virtual Machines</a></li>
+			<li><a onclick="toggleSidebar()" href="#3">Website Awards</a></li>
+			<li><a onclick="toggleSidebar()" href="#4">HTML5</a></li>
+			<li><a onclick="toggleSidebar()" href="#5">CSS3</a></li>
+			<li><a onclick="toggleSidebar()" href="#6">HTML Structure</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Pictures and Images</a></li>
+			<li><a onclick="toggleSidebar()" href="#8">Accessibility</a></li>
+			<li><a onclick="toggleSidebar()" href="#9">Standards</a></li>
+			<li><a onclick="toggleSidebar()" href="#10">Relative and Absolute
+					links</a></li>
+			<li><a onclick="toggleSidebar()" href="#11">Media Queries</a></li>
+			<li><a onclick="toggleSidebar()" href="#12">Flex-Box</a></li>
+			<li><a onclick="toggleSidebar()" href="#13">Advance CSS selectors</a></li>
+			<li><a onclick="toggleSidebar()" href="#14">Video</a></li>
+			<li><a onclick="toggleSidebar()" href="#15">b vs strong</a></li>
 		</ul>
 	</nav>
 </aside>		
@@ -101,16 +76,19 @@
 		it via SSH using a shell chrome extension. This was my first
 		interaction with a linux shell so I experimented with a couple of
 		commands.
-		<div class="html">
-			<p>help <span>"Displays the possible commands"</span>
-			<p>man <em>program</em> <span>"Display a program's manual" </span>
-			<p>cd <em>path</em> <span>"Changes directory to a path. If no path is set it
-				changes back to the home folder."</span>
-			<p>mkdir <em>path</em> <span>"Makes a directory."</span>
-			<p>ls <span>"Lists the files and directories in the current directory.
-			Has lots of parameters like -a which shows invisible
-			files/directories."</span>
-		</div>
+		<pre class="bash">
+			
+
+help <span>"Displays the possible commands"</span>
+
+man <em>program</em> <span>"Display a program's manual" </span>
+
+cd <em>path</em> <span>"Changes directory to a path. If no path is set it changes back to the home folder."</span>
+
+mkdir <em>path</em> <span>"Makes a directory."</span>
+
+ls <span>"Lists the files and directories in the current directory. Has lots of parameters like -a which shows invisible files/directories."</span>
+		</pre>
 		<h1>Website awards</h1>
 		<p>We also filled out a form of what we think are the best and worst
 		website we have seen throught out the web. I nominated <a
@@ -138,27 +116,37 @@
 		the .html document is written in HTML5 we had to use a special tag at
 		the top of the docuement so that browsers know what to expect.
 
-		<div class="html">
-			<p>&lt;!DOCTYPE html&gt;
-		</div>
+		<pre class="html">
+
+
+&lt;!DOCTYPE html&gt;
+		</pre>
 		<p>I experimented with the tags I knew already and some other new
 		ones.
-		<div class="html">
-			
-			<p>&lt;p&gt; Hello world &lt;/p&gt; <span> Used for new
-				paragraphs.</span>
-			<p>&lt;h1&gt; Heading 1 &lt;/h1&gt; <span> Heading 1</span>
-			<p>&lt;ol&gt; <span> Start of ordered list</span>
-			<p>&lt;li&gt; Enumerated Item 1 &lt;li&gt;<span> Item</span>
-			<p>&lt;li&gt; Enumerated Item 2 &lt;li&gt;<span> Item</span>
-			<p>&lt;/ol&gt;<span> End of ordered list</span>
-		</div>
+		<pre class="html">
+
+
+&lt;p&gt;<span> Used for new paragraphs.</span>
+  Hello world
+&lt;/p&gt; 
+
+&lt;h1&gt;<span> Heading 1</span>
+  Heading 1
+&lt;/h1&gt; 
+
+&lt;ol&gt; <span> Start of ordered list</span>
+  &lt;li&gt; Enumerated Item 1 &lt;li&gt;<span> Item</span>
+  &lt;li&gt; Enumerated Item 2 &lt;li&gt;<span> Item</span>
+&lt;/ol&gt;<span> End of ordered list</span>
+		</pre>
 		
 		<p>We also covered some deprecated tags that we should avoid at all
 		cost. 
-		<div class="html">
-			&lt;br&gt;
-		</div>
+		<pre class="html">
+
+
+&lt;br&gt;
+		</pre>
 
 		<p>br was used for new lines, but we shouldn't need to use it since the
 		html file is the content of the webpage, if we want to have a larger
@@ -195,34 +183,39 @@
 		element. But by doing this we are styling each element
 		specifically, so really big documents will require a stupid amount
 		of time to correctly style.
-		<div class="html">
-			&lt;p style:background-color=<span>"red"</span>;&gt;Some text
-		</div>
+		<pre class="html">
+
+
+&lt;p style:background-color=<span>"red"</span>;&gt;Some text
+		</pre>
 		<p>Which is why it is not recommended to use.
 
 		<h2>External Style Sheet</h2>
 		<p>We can style every element in a page by using an external style sheet,
 		which is usually a <em>something.css</em> containing css.
-		<div class="html">
-			<p>HTML
-			<p>&lt;p&gt;<span>Some text</span>
-		</div>
-		<div class="html">
-			<p>CSS
-			<p>p{
-			<p>background-color:<span>red</span>;
-			<p>}
-		</div>
+		<pre class="html">
+
+
+&lt;p&gt;<span>Some text</span>
+		</pre>
+		<pre class="css">
+
+
+p{
+background-color:<span>red</span>;
+}
+		</pre>
 		<p>This is really usefull as we can have 1 css file linked to many html
 		pages and have a consistent web design. So if we want to change one
 		thing on every page we only have to edit 1 file.
 		
 		<p>To link an style sheet file to an html document we have to use
 		the following line in our head section.
-		<div class="html">
-			<p>&lt;link rel=<span>"stylesheet"</span>
-			href=<span>"../style.css"</span>&gt;
-		</div>
+		<pre class="html">
+
+
+&lt;link rel=<span>"stylesheet"</span>href=<span>"../style.css"</span>&gt;
+		</pre>
 		<p>Where "../style.css" is the path to the file.
 
 		<h1>HTML Structure</h1>
@@ -232,18 +225,14 @@
 		stylesheets/scripts.
 		<p>This informatin is not showned in the page but it is used for
 		other necessary actions the webpage will perform.
-		<div class="html">
-			<p>&lt;meta charset=<span>"utf-8"</span>&gt;
-			<p>&lt;meta name=<span>"author"</span>
-			content=<span>"UP849868"</span>&gt;
-			<p>&lt;meta name=<span>"viewport"</span>
-			content=<span>"width=device-width,
-			initial-scale=1.0"</span>&gt;
-			<p>&lt;link rel=<span>"shortcut icon" </span>type=<span>"image/png"
-			</span>href=<span>"../images/logoInverted.png"</span>&gt;
-			<p>&lt;link rel=<span>"stylesheet"</span>
-			href=<span>"../style.css"</span>&gt;
-		</div>
+		<pre class="html">
+			<p>
+&lt;meta charset=<span>"utf-8"</span>&gt;
+&lt;meta name=<span>"author"</span>content=<span>"UP849868"</span>&gt;
+&lt;meta name=<span>"viewport"</span>content=<span>"width=device-width,initial-scale=1.0"</span>&gt;
+&lt;link rel=<span>"shortcut icon" </span>type=<span>"image/png"</span>href=<span>"../images/logoInverted.png"</span>&gt;
+&lt;link rel=<span>"stylesheet"</span>href=<span>"../style.css"</span>&gt;
+		</pre>
 		<p>The <b>meta</b> tag are used for metadata.
 		<p>The <b>link</b> tag are used to link other files like
 		stylesheets or javascript.
@@ -260,18 +249,21 @@
 		Its important that the body of the html document follows good
 		semantic markup to ensure that the webpage can be read by
 		screenreaders.
-		<div class="html">
-				<p>&lt;nav&gt;
-				<p>&lt;/nav&gt;
-				<p>&lt;article&gt;
-				<p>&lt;header&gt;
-				<p>&lt;/header&gt;
-				<p>&lt;section&gt;
-				<p>&lt;/section&gt;
-				<p>&lt;footer&gt;
-				<p>&lt;/footer&gt;
-				<p>&lt;/article&gt;
-		</div>	
+		<pre class="html">
+
+
+&lt;nav&gt;
+  &lt;a&gt;
+&lt;/nav&gt;
+&lt;article&gt;
+  &lt;header&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+  &lt;/section&gt;
+  &lt;footer&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;
+		</pre>	
 		<p>A well defined website will have a good semantic structure meaning
 		each part of the website has its corresponding tag. So the header
 		elements will be enclosed in a header tag, the main will be enclosed in
@@ -307,14 +299,14 @@
 			tag so that a different image loads at a specific screen size or
 			other queries.
 			
-			<div class="html">
-				<p>&lt;picture&gt;
-				<p>&lt;source srcset=<span>"images/icons/github.svg"</span>
-				type=<span>"image/svg+xml"</span> &gt;
-				<p>&lt;img src=<span>"images/icons/github.png"</span>
-				alt=<span>"github"</span>&gt;
-				<p>&lt;picture&gt;
-			</div>
+			<pre class="html">
+
+
+&lt;picture&gt;
+  &lt;source srcset=<span>"images/icons/github.svg"</span>type=<span>"image/svg+xml"</span> &gt;
+  &lt;img src=<span>"images/icons/github.png"</span>alt=<span>"github"</span>&gt;
+&lt;picture&gt;
+			</pre>
 
 			<p>The crucial part of the picture tag is that it must contain either
 			a media query or a type tag. 
