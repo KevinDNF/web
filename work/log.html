@@ -46,29 +46,43 @@
 			<li><a onclick="toggleSidebar()" href="#1">Introduction</a></li>
 			<li><a onclick="toggleSidebar()" href="#2">Virtual Machines</a></li>
 			<li><a onclick="toggleSidebar()" href="#3">Website Awards</a></li>
+			<li><a onclick="toggleSidebar()" href="#4">Hyperlinks</a></li>
 			<li><a onclick="toggleSidebar()" href="#4">HTML5</a></li>
-			<li><a onclick="toggleSidebar()" href="#5">CSS3</a></li>
+			<li><a onclick="toggleSidebar()" href="#6">Closing tags</a></li>
+			<li><a onclick="toggleSidebar()" href="#6">Validators</a></li>
 			<li><a onclick="toggleSidebar()" href="#6">HTML Structure</a></li>
-			<li><a onclick="toggleSidebar()" href="#7">Pictures and Images</a></li>
-			<li><a onclick="toggleSidebar()" href="#8">Accessibility</a></li>
-			<li><a onclick="toggleSidebar()" href="#9">Standards</a></li>
-			<li><a onclick="toggleSidebar()" href="#10">Relative and Absolute
-					links</a></li>
-			<li><a onclick="toggleSidebar()" href="#11">Media Queries</a></li>
-			<li><a onclick="toggleSidebar()" href="#12">Flex-Box</a></li>
-			<li><a onclick="toggleSidebar()" href="#13">Advance CSS selectors</a></li>
-			<li><a onclick="toggleSidebar()" href="#14">Video</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Head</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Body - Semantics</a></li>
 			<li><a onclick="toggleSidebar()" href="#15">b vs strong</a></li>
+			<li><a onclick="toggleSidebar()" href="#15">Media Elements</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Pictures and Images</a></li>
+			<li><a onclick="toggleSidebar()" href="#12">Video</a></li>
+			<li><a onclick="toggleSidebar()" href="#12">SVG</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">CSS3</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Inline Styling</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">External Style Sheet</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">CSS Selector</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">ID and Classes</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Advance CSS Selectors</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Media Queries</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Flex-Box</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Accessibility</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Video Transcript</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Aria-label</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Colour</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Text-size</a></li>
+			<li><a onclick="toggleSidebar()" href="#7">Usability</a></li>
 		</ul>
 	</nav>
 </aside>		
 <main>
+	<section>
 		<h1 id="1">Introduction</h1>
 		<p>This document is a in-progress log of all the things I've learned in
 			 Web Fundation at University of Porstmouth. I will also include
 			 all the extra knowledge I have gathered outside of lectures
 			 related to web fundation.
-		<h1 id="2">Virtual Machines</h1>
+		<h2 id="2">Virtual Machines</h2>
 		<p>In out first practical we where introduced to our Virtual
 		Machines which we will be using for our coursework website and
 		database design.
@@ -89,20 +103,34 @@ mkdir <em>path</em> <span>"Makes a directory."</span>
 
 ls <span>"Lists the files and directories in the current directory. Has lots of parameters like -a which shows invisible files/directories."</span>
 		</pre>
-		<h1>Website awards</h1>
+		<h2>Website awards</h2>
 		<p>We also filled out a form of what we think are the best and worst
 		website we have seen throught out the web. I nominated <a
-			 href="www.liamwong.com">LiamWong.com</a> since I really liked the
+			 href="https://www.liamwong.com">LiamWong.com</a> since I really liked the
 		 design and aesthetics he has gone for in his web portfolio. 
 	  <p>Navigating github I also found some interesting web portfolio that I
 		could use as reference for when I will be designing my website for the
 		coursework.
-		<a href="todperry.ninja">TodPerry.ninja</a> caught my attention, being
+		<a href="http://toddperry.ninja">TodPerry.ninja</a> caught my attention, being
 		a bash terminal simulation with vim editing a python file. I really
 		liked the idea and execution since you could use vim commands and
 		interact with the shell enviroment. A really unique and well
 		designed website.
 
+		<h2>Hyperlinks</h2>
+		protocols + what does it mean
+		<h3>Absolute links</h3>
+		Absolute Links are usually bad since they are a direct path to a
+		devices directory. Something like
+		<em>/home/MyCoolUserName/image.png</em>
+		Would mean that it only works on that specific device
+		<h3>Relative links</h3>
+		Relative links are hyperlinks that are relative to the position of the
+		file thats reading it. So if I place a file with <em>hello/world.png</em>
+		then the image will only work on that specific device.
+
+	</section>
+	<section>
 		<h1>HTML 5</h1>
 		<p>When creating a website the most basic languages used are HTML
 		and CSS. On the following weeks we were introduced to HTML and CSS more
@@ -173,50 +201,8 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		Similar to how an IDE will display errors.
 		<p>One of our requirements for our website is that it has to be valid
 		html so we are not allowed a single error.
-
-		<h1>CSS 3</h1>
-		<p>CSS is the styling of the webpage, how it looks and how it
-		reflows. There are two main ways of implementing css. 
-
-		<h2>Inline styling</h2>
-		<p>Using the style attribute inside a tag can add style to a specific
-		element. But by doing this we are styling each element
-		specifically, so really big documents will require a stupid amount
-		of time to correctly style.
-		<pre class="html">
-
-
-&lt;p style:background-color=<span>"red"</span>;&gt;Some text
-		</pre>
-		<p>Which is why it is not recommended to use.
-
-		<h2>External Style Sheet</h2>
-		<p>We can style every element in a page by using an external style sheet,
-		which is usually a <em>something.css</em> containing css.
-		<pre class="html">
-
-
-&lt;p&gt;<span>Some text</span>
-		</pre>
-		<pre class="css">
-
-
-p{
-  background-color:<span>red</span>;
-}
-		</pre>
-		<p>This is really usefull as we can have 1 css file linked to many html
-		pages and have a consistent web design. So if we want to change one
-		thing on every page we only have to edit 1 file.
-		
-		<p>To link an style sheet file to an html document we have to use
-		the following line in our head section.
-		<pre class="html">
-
-
-&lt;link rel=<span>"stylesheet"</span>href=<span>"../style.css"</span>&gt;
-		</pre>
-		<p>Where "../style.css" is the path to the file.
+	</section>
+	<section>
 
 		<h1>HTML Structure</h1>
 		<h2>Head</h2>
@@ -282,8 +268,18 @@ p{
 		the top navigation bar, but can be used for many forms of navigations
 		throught out the webpage. In this website I have 2 sets of navigation;
 		the top sticky bar and the sliding one.
-
-		<h1>Pictures and images</h1>
+		
+		<h2>&lt;b&gt; vs &lt;strong&gt;</h2>
+		<p>Due to the introduction of semantic markup we now have two ways of
+		adding boldness to text but they are completly different in how they
+		are meant to be implemented. The b tag is used as usual, for visual
+		boldness but Strong is used to mark importance to text in a webpage
+		level so that web crawlers or bots can use this tags to find what is
+		important to the webpage.
+	</section>
+	<section>
+		<h1>Media Elements</h1>
+		<h2>Pictures and images</h2>
 		<p>On HTML5 the introduction of the <b>picture</b> tag was quite a big
 		change to the image world, since before using the <b>img</b> tag was the only way of
 			implementing images.
@@ -314,101 +310,78 @@ p{
 
 			<p>The crucial part of the picture tag is that it must contain either
 			a media query or a type tag. 
-
-		<h1>Accessibility</h1>
-		<p>I have mentioned before that we must follow the standards and be 
-		friendly to screen readers, all of this falls
-		into the category of accessibility which is a massive topic.
-		<p>Accessibility is allowing everyone to use the website which includes
-		people with many problems to use it. So how can we ensure that a blind
-		person can use our website? We use a variety of tools.
-		<h2>Video transcripts</h2>
-		<p>People with difficulty hearing whats happening on the screen might
-		require some visual feedback from the video to fully understand what is
-		happening. Which is why it is important to add subtitles to videos via
-		a video transcript file, <em>transcript.vtt</em>. I have an example of
-		this down below.
-		<h2>Aria-label</h2>
-		<p>Aria labels can be used to show how certain buttons are used.
-		<h2>Colour</h2>
-		<p>Colour choices are crucial for everyone to see. I have carefully
-		selected the colours on this website to be as accessible as possible. A
-		good example of a badly designed colourscheme can be seen in my first
-		design of this website.
-		<h2>Text-size</h2>
-		<p>Font size is also a crucial factor. Usually you want to have it
-		1rem to avoid changing the font size of the user preference.
-		<h1>Standards</h1>	
-		<h1>Relative and Absolute Links</h1>
-		<h2>Absolute links</h2>
-		Absolute Links are usually bad since they are a direct path to a
-		devices directory. Something like
-		<em>/home/MyCoolUserName/image.png</em>
-		Would mean that it only works on that specific device
-		<h2>Relative links</h2>
-		Relative links are hyperlinks that are relative to the position of the
-		file thats reading it. So if I place a file with <em>hello/world.png</em>
-		then the image will only work on that specific device.
-		<h1>Media Queries</h1>
-		<p>When smartphones became and standard item for evey user to carry around
-		websites struggled to resize correctly to every smartphone and opted to
-		have a seperate .mobile version just to adapt to smartphones. This was
-		later improved with the addition of <b>media queries</b>. 
-
-		<p>We can use media queries in css to change the style when a certain
-		condition occurs. The most common one and the one I will be using
-		through out this webpage is the <b>screen</b> attribute, which checks
-		the size of the screen.
-<pre class="css">
+	
+		<h2>Video</h2>
+		<pre class="html">
 
 
-@media screen and (max-width:520px){
-  nav{
-    padding: <span>9px</span>;
-  }
-}
+&lt;video controls&gt;
+  &lt;source src=<span>"../videos/yetris.mp4"</span> type=<span>"video/mp4"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.mkv"</span> type=<span>"video/mkv"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.mpeg"</span> type=<span>"video/mpeg"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.webm"</span> type=<span>"video/webm"</span>&gt;
+  &lt;track label=<span>"English"</span> kind=<span>"subtitles" </span>srclang=<span>"en"</span> src=<span>"../videos/yetris.vtt" </span>default&gt;
+&lt;/video&gt;
+		</pre>
+		<video controls>
+			<source src="../videos/yetris.mp4" type="video/mp4">
+			<source src="../videos/yetris.mkv" type="video/mkv">
+			<source src="../videos/yetris.mpeg" type="video/mpeg">
+			<source src="../videos/yetris.webm" type="video/webm">
+			<track label="English" kind="subtitles" srclang="en" src="../videos/yetris.vtt" default>
+		</video>
 
-</pre>
+		<h2>SVG</h2>
+		<p>Some Text
+	
+	</section>
+	<section>
+		<h1>CSS 3</h1>
+		<p>CSS is the styling of the webpage, how it looks and how it
+		reflows. There are two main ways of implementing css. 
 
-		<p>In this example when the screen is less than 520px will change the
-		navigation padding to 9px.
-		<p>The good thing about media queries is that you can have lots of
-		different css selectors inside of the media query so technically you
-		can have a completly new webpage for mobile users.
+		<h2>Inline styling</h2>
+		<p>Using the style attribute inside a tag can add style to a specific
+		element. But by doing this we are styling each element
+		specifically, so really big documents will require a stupid amount
+		of time to correctly style.
+		<pre class="html">
 
 
-		<h1>Flex-Box</h1>
-		<p>Flex-box is a super usefull way of formatting a webpage and ensure
-		that is reactive to screen size. The idea behind flex box is that you
-		can apply it to a set of elements in a container so that they fill the
-		container to a set of rules.
-		<p>The first step to use flexbox is have the elements you want to fill
-		the screen inside of a container. This will make every element fill the
-		space diagonally.
-		<p>By changing the <b>flex-flow</b> to column the space will be filled
-		horizontally.
+&lt;p style:background-color=<span>"red"</span>;&gt;Some text
+		</pre>
+		<p>Which is why it is not recommended to use.
 
+		<h2>External Style Sheet</h2>
+		<p>We can style every element in a page by using an external style sheet,
+		which is usually a <em>something.css</em> containing css.
+		<pre class="html">
+
+
+&lt;p&gt;<span>Some text</span>
+		</pre>
 		<pre class="css">
 
 
-body{
-  display:<span>flex</span>;
-  flex-flow:<span>column</span>;
-}
-
-body > *{
-  flex:<span>1 100%</span>;
+p{
+  background-color:<span>red</span>;
 }
 		</pre>
-		<p>In this example I'm assigning flex to the body as my container and
-		then giving a flex value of 1 and flex basis of 100% to every element
-		inside of body so that it fill the whole
-		area.
-		<p>I have utilize media queries in combination with flexbox to ensure
-		that this website is reactive to all screen sizes. Try resizing this
-		page and see what happends to the navigation.
+		<p>This is really usefull as we can have 1 css file linked to many html
+		pages and have a consistent web design. So if we want to change one
+		thing on every page we only have to edit 1 file.
+		
+		<p>To link an style sheet file to an html document we have to use
+		the following line in our head section.
+		<pre class="html">
 
-		<h1>CSS Selectors</h1>
+
+&lt;link rel=<span>"stylesheet"</span>href=<span>"../style.css"</span>&gt;
+		</pre>
+		<p>Where "../style.css" is the path to the file.
+	
+
+		<h2>CSS Selectors</h2>
 		<p>CSS works by selecting different tags and styling them as we wish.
 		
 <pre class="html">
@@ -468,33 +441,98 @@ div:not(.something){
 }
 		</pre>
 		<p>This will select all the elements inside the body
-		<h1>Video</h1>
-		<pre class="html">
+
+		<h2>Media Queries</h2>
+		<p>When smartphones became and standard item for evey user to carry around
+		websites struggled to resize correctly to every smartphone and opted to
+		have a seperate .mobile version just to adapt to smartphones. This was
+		later improved with the addition of <b>media queries</b>. 
+
+		<p>We can use media queries in css to change the style when a certain
+		condition occurs. The most common one and the one I will be using
+		through out this webpage is the <b>screen</b> attribute, which checks
+		the size of the screen.
+<pre class="css">
 
 
-&lt;video controls&gt;
-  &lt;source src=<span>"../videos/yetris.mp4"</span> type=<span>"video/mp4"</span>&gt;
-  &lt;source src=<span>"../videos/yetris.mkv"</span> type=<span>"video/mkv"</span>&gt;
-  &lt;source src=<span>"../videos/yetris.mpeg"</span> type=<span>"video/mpeg"</span>&gt;
-  &lt;source src=<span>"../videos/yetris.webm"</span> type=<span>"video/webm"</span>&gt;
-  &lt;track label=<span>"English"</span> kind=<span>"subtitles" </span>srclang=<span>"en"</span> src=<span>"../videos/yetris.vtt" </span>default&gt;
-&lt;/video&gt;
+@media screen and (max-width:520px){
+  nav{
+    padding: <span>9px</span>;
+  }
+}
+
+</pre>
+
+		<p>In this example when the screen is less than 520px will change the
+		navigation padding to 9px.
+		<p>The good thing about media queries is that you can have lots of
+		different css selectors inside of the media query so technically you
+		can have a completly new webpage for mobile users.
+
+
+		<h2>Flex-Box</h2>
+		<p>Flex-box is a super usefull way of formatting a webpage and ensure
+		that is reactive to screen size. The idea behind flex box is that you
+		can apply it to a set of elements in a container so that they fill the
+		container to a set of rules.
+		<p>The first step to use flexbox is have the elements you want to fill
+		the screen inside of a container. This will make every element fill the
+		space diagonally.
+		<p>By changing the <b>flex-flow</b> to column the space will be filled
+		horizontally.
+
+		<pre class="css">
+
+
+body{
+  display:<span>flex</span>;
+  flex-flow:<span>column</span>;
+}
+
+body > *{
+  flex:<span>1 100%</span>;
+}
 		</pre>
-		<video controls>
-			<source src="../videos/yetris.mp4" type="video/mp4">
-			<source src="../videos/yetris.mkv" type="video/mkv">
-			<source src="../videos/yetris.mpeg" type="video/mpeg">
-			<source src="../videos/yetris.webm" type="video/webm">
-			<track label="English" kind="subtitles" srclang="en" src="../videos/yetris.vtt" default>
-		</video>
-		<h1>&lt;b&gt; vs &lt;strong&gt;</h1>
-		<p>Due to the introduction of semantic markup we now have two ways of
-		adding boldness to text but they are completly different in how they
-		are meant to be implemented. The b tag is used as usual, for visual
-		boldness but Strong is used to mark importance to text in a webpage
-		level so that web crawlers or bots can use this tags to find what is
-		important to the webpage.
+		<p>In this example I'm assigning flex to the body as my container and
+		then giving a flex value of 1 and flex basis of 100% to every element
+		inside of body so that it fill the whole
+		area.
+		<p>I have utilize media queries in combination with flexbox to ensure
+		that this website is reactive to all screen sizes. Try resizing this
+		page and see what happends to the navigation.
 
+
+
+	</section>
+	<section>
+		<h1>Accessibility</h1>
+		<p>I have mentioned before that we must follow the standards and be 
+		friendly to screen readers, all of this falls
+		into the category of accessibility which is a massive topic.
+		<p>Accessibility is allowing everyone to use the website which includes
+		people with many problems to use it. So how can we ensure that a blind
+		person can use our website? We use a variety of tools.
+		<h2>Video transcripts</h2>
+		<p>People with difficulty hearing whats happening on the screen might
+		require some visual feedback from the video to fully understand what is
+		happening. Which is why it is important to add subtitles to videos via
+		a video transcript file, <em>transcript.vtt</em>. I have an example of
+		this down below.
+		<h2>Aria-label</h2>
+		<p>Aria labels can be used to show how certain buttons are used.
+		<h2>Colour</h2>
+		<p>Colour choices are crucial for everyone to see. I have carefully
+		selected the colours on this website to be as accessible as possible. A
+		good example of a badly designed colourscheme can be seen in my first
+		design of this website.
+		<h2>Text-size</h2>
+		<p>Font size is also a crucial factor. Usually you want to have it
+		1rem to avoid changing the font size of the user preference.
+	</section>
+	<section>
+		<h1>Usability</h1>
+		<p>Some text
+	</section>
 </main>	
 <footer>
 	<h1>Hey! I'm clean html/css. Validate me here!</h1>
