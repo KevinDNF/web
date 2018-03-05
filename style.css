@@ -9,7 +9,7 @@ html {
 body{
 	margin:0;
 }
-body header.not(.icons){
+body header:not(.icons){
 	height:auto;
 	max-height:300px;
 	overflow:hidden;
