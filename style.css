@@ -295,6 +295,9 @@ pre p{
 	margin-bottom:0;
 	padding:0;
 }
+article h2{
+	border-style:none;
+}
 footer{
 	text-align:center;
 	margin-top:60px;
