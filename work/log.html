@@ -126,18 +126,18 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		<pre class="html">
 
 
-&lt;p&gt;<span> Used for new paragraphs.</span>
-  Hello world
+&lt;p&gt;
+  <span>Used for new paragraphs.</span>
 &lt;/p&gt; 
 
-&lt;h1&gt;<span> Heading 1</span>
-  Heading 1
+&lt;h1&gt;
+  <span>Heading 1</span>
 &lt;/h1&gt; 
 
-&lt;ol&gt; <span> Start of ordered list</span>
-  &lt;li&gt; Enumerated Item 1 &lt;li&gt;<span> Item</span>
-  &lt;li&gt; Enumerated Item 2 &lt;li&gt;<span> Item</span>
-&lt;/ol&gt;<span> End of ordered list</span>
+&lt;ol&gt; <span><em>// Start of ordered list</em></span>
+  &lt;li&gt; <span>Enumerated Item 1</span> &lt;li&gt;
+  &lt;li&gt; <span>Enumerated Item 2</span> &lt;li&gt;
+&lt;/ol&gt;<span><em>// End of ordered list</em></span>
 		</pre>
 		
 		<p>We also covered some deprecated tags that we should avoid at all
@@ -202,7 +202,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 
 
 p{
-background-color:<span>red</span>;
+  background-color:<span>red</span>;
 }
 		</pre>
 		<p>This is really usefull as we can have 1 css file linked to many html
@@ -271,18 +271,21 @@ background-color:<span>red</span>;
 		the main.
 		<p><b>Articles</b> are used for blog post like documents and other form
 		of repetitive content.
-		<p><b>Sections</b> are sections inside articles or just the main
-		<p><b>Main</b> is where the main content of the webpage goes to
+		<p><b>Sections</b> are sections inside articles or just the main.
+		<p><b>Main</b> is where the main content of the webpage goes.
 		<p><b>Footer and Header</b> is as standard documents have header and
 		footer. The important part of these elements is that the html document
 		will have a header and footer and articles will have a header and
 		footer meaning we can utilized them in many different other semantic
 		tags.
-		<p><b>Nav</b> is used for navigation of the website.
+		<p><b>Nav</b> is used for navigation of the website. This is not only
+		the top navigation bar, but can be used for many forms of navigations
+		throught out the webpage. In this website I have 2 sets of navigation;
+		the top sticky bar and the sliding one.
 
 		<h1>Pictures and images</h1>
-		<p>On html5 the introduction of the <b>picture</b> tag was quite a big
-			change to the image world, since before it was the only way of
+		<p>On HTML5 the introduction of the <b>picture</b> tag was quite a big
+		change to the image world, since before using the <b>img</b> tag was the only way of
 			implementing images.
 			<p>The <b>img</b> tag is used to add an image to a webpage. This can
 			be of any image format and is essential that it contains a good
@@ -347,11 +350,89 @@ background-color:<span>red</span>;
 		file thats reading it. So if I place a file with <em>hello/world.png</em>
 		then the image will only work on that specific device.
 		<h1>Media Queries</h1>
-		Try resizing the page. What happends to the navigation bar.
+		<p>When smartphones became and standard item for evey user to carry around
+		websites struggled to resize correctly to every smartphone and opted to
+		have a seperate .mobile version just to adapt to smartphones. This was
+		later improved with the addition of <b>media queries</b>. 
+
+		<p>We can use media queries in css to change the style when a certain
+		condition occurs. The most common one and the one I will be using
+		through out this webpage is the <b>screen</b> attribute, which checks
+		the size of the screen.
+<pre class="css">
+
+
+@media screen and (max-width:520px){
+  nav{
+    padding: <span>9px</span>;
+  }
+}
+
+</pre>
+
+		<p>In this example when the screen is less than 520px will change the
+		navigation padding to 9px.
+		<p>The good thing about media queries is that you can have lots of
+		different css selectors inside of the media query so technically you
+		can have a completly new webpage for mobile users.
+
+
 		<h1>Flex-Box</h1>
-		Is good. And example of this can be seen at my homepage.
+		<p>Flex-box is a super usefull way of formatting a webpage and ensure
+		that is reactive to screen size. The idea behind flex box is that you
+		can apply it to a set of elements in a container so that they fill the
+		container to a set of rules.
+		<p>The first step to use flexbox is have the elements you want to fill
+		the screen inside of a container. This will make every element fill the
+		space diagonally.
+		<p>By changing the <b>flex-flow</b> to column the space will be filled
+		horizontally.
+
+		<pre class="css">
+
+
+body{
+  display:<span>flex</span>;
+  flex-flow:<span>column</span>;
+}
+
+body > *{
+  flex:<span>1 100%</span>;
+}
+		</pre>
+		<p>In this example I'm assigning flex to the body as my container and
+		then giving a flex value of 1 and flex basis of 100% to every element
+		inside of body so that it fill the whole
+		area.
+		<p>I have utilize media queries in combination with flexbox to ensure
+		that this website is reactive to all screen sizes. Try resizing this
+		page and see what happends to the navigation.
+
 		<h1>Advance CSS selectors</h1>
+
+		<p>By creating this website I have encontered what you could considered
+		"advance css selectors" or just some of the less used but still really
+		powerfull.
+
+		<pre class="css">
+
+
+body > *{
+  flex:<span>1 100%</span>;
+}
+		</pre>
 		<h1>Video</h1>
+		<pre class="html">
+
+
+&lt;video controls&gt;
+  &lt;source src=<span>"../videos/yetris.mp4"</span>type=<span>"video/mp4"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.mkv"</span>type=<span>"video/mkv"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.mpeg"</span>type=<span>"video/mpeg"</span>&gt;
+  &lt;source src=<span>"../videos/yetris.webm"</span>type=<span>"video/webm"</span>&gt;
+  &lt;track label=<span>"English"</span> kind=<span>"subtitles"</span>srclang=<span>"en"</span> src=<span>"../videos/yetris.vtt"</span> default&gt;
+&lt;/video&gt;
+		</pre>
 		<video controls>
 			<source src="../videos/yetris.mp4" type="video/mp4">
 			<source src="../videos/yetris.mkv" type="video/mkv">
