@@ -295,7 +295,7 @@ pre p{
 	margin-bottom:0;
 	padding:0;
 }
-article h2{
+article h2, aside h2{
 	border-style:none;
 }
 footer{
