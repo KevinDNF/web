@@ -118,16 +118,39 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		designed website.
 
 		<h2>Hyperlinks</h2>
-		protocols + what does it mean
+		<p>To access the web we utilize web addresses and links, navigating
+		from page to page is done by the clicking of links on the screen that
+		takes you to another website.
+		<p><em>https://google.com/search?q=rjb#ires</em>
+		<p>A web address can be broken down into sections. Each section has a
+		specific purpose.
+		<p><em>https:</em> - <b>Scheme</b>
+		<p><em>//google.com</em> - <b>Authority</b>
+		<p><em>/search</em> - <b>Path</b>
+		<p><em>?q=rjb</em> - <b>Query</b>
+		<p><em>#ires</em> - <b>Fragment</b>
+		<p>But for making our website we don't need to worry about the
+		structure and how this types of links work, but instead we will be
+		using realtive or absolute links.
+		<p>Since we are going to be hosting our websites that means we have to
+		be able to point to different files on our file structure. Different
+		html files will be different pages for the user.
 		<h3>Absolute links</h3>
-		Absolute Links are usually bad since they are a direct path to a
-		devices directory. Something like
-		<em>/home/MyCoolUserName/image.png</em>
-		Would mean that it only works on that specific device
+		Absolute links are links that point from the root directory to a
+		specific file. This means that its specific to the device and file
+		structure of that device. 
+		<p><em>/home/MyCoolUserName/image.png</em>
+		<p> or
+		<p><em>C://users/MyCoolUserName/desktop/image.png</em>
+		<p>So if I where to have this link on my computer with my super cool
+		username other people won't be able to access it since their username
+		won't be as cool as mine.
 		<h3>Relative links</h3>
-		Relative links are hyperlinks that are relative to the position of the
-		file thats reading it. So if I place a file with <em>hello/world.png</em>
-		then the image will only work on that specific device.
+		<p>Relative links are hyperlinks that are relative to the position of the
+		file thats reading it. So if I place a file with 
+		<p><em>hello/world.png</em>
+		<p>then the parent folder can be copied anywhere in the hard drive and
+		still work.
 
 	</section>
 	<section>
@@ -312,6 +335,14 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 			a media query or a type tag. 
 	
 		<h2>Video</h2>
+		<p>To add videos to a website we have to use the <b>video</b> tag and
+		specified some sources.
+		<p>Each source would be the same video but with different file types so
+		that if the browser is not able of loading the video of that specific
+		format it can try another format. This is crucial to ensure
+		compatibility with different web browsers.
+		<p>I have also included a track of kind subtitles which will add
+		subtitles to the video using a vtt file.
 		<pre class="html">
 
 
@@ -332,7 +363,20 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		</video>
 
 		<h2>SVG</h2>
-		<p>Some Text
+		<p>Using png and jpeg images are great for compatibility but they are
+		bitmap images. This can be an advantage or a disadvantage depending on
+		the scenario but one of their disadvantages is that they don't scale
+		well. When resizing a bitmap image the quality tends to deteriorate as
+		interpolation can only do so much.
+		<p>An alternative to using bitmap images is using vector images. Vector
+		images are images that contain information of the points (vectors) to
+		create the shapes and paths. This way vector images can be resized
+		without losing any quality at all.
+		<p>SVG is one of these vector image types. It integrates quite well
+		with html since its an extension of xml. So we tend to use them for
+		icons and other elements.
+		<p>If you look at the navigation bar you will be able to see an example
+		of an SVG image.
 	
 	</section>
 	<section>
@@ -420,8 +464,28 @@ style. In this case if we only want to style Text 2 which is inside the
 main tags we can use <em>main p { }</em> to select all the p tags inside
 the main tag.
 <p>
-		<h2>ID and Classes</h1>
+		<h2>ID and Classes</h2>
+		<p>Using normal css selectors is great but we are limited to only the
+		ones predefined, we can get around this by making our own selectors.
+		<p><b>ID</b> are used for one single element on the page.
+		<p><b>Classes</b> are used for many elements on the page.
+		<p>By using both selectors we can have full control on the way the
+		webpage looks.
+		<pre class="html">
 
+
+&lt;p id=<span>"oneThing"</span> class=<span>"lotsOfThings"</span>&gt;
+		</pre>
+		<pre class="css">
+
+
+.lotsOfThings{
+  color:<span>red</span>;
+}
+#oneThing{
+  background-color:<span>blue</span>; 
+}
+		</pre>
 		<h2>Advance CSS selectors</h2>
 
 		<p>By creating this website I have encontered what you could considered
@@ -431,16 +495,18 @@ the main tag.
 		<pre class="css">
 
 
-body > *{ <span> 
+body > *{ 
   flex:<span>1 100%</span>;
 }
 
+<em>//This will select all the elements inside the body</em>
 
 div:not(.something){
-  background-color:red;
+  background-color:<span>red</span>;
 }
+
+<em>//This will select all divs except the ones with a something class</em>
 		</pre>
-		<p>This will select all the elements inside the body
 
 		<h2>Media Queries</h2>
 		<p>When smartphones became and standard item for evey user to carry around
@@ -505,7 +571,7 @@ body > *{
 
 	</section>
 	<section>
-		<h1>Accessibility</h1>
+		<h1>Accessibility and Usability</h1>
 		<p>I have mentioned before that we must follow the standards and be 
 		friendly to screen readers, all of this falls
 		into the category of accessibility which is a massive topic.
@@ -519,19 +585,22 @@ body > *{
 		a video transcript file, <em>transcript.vtt</em>. I have an example of
 		this down below.
 		<h2>Aria-label</h2>
-		<p>Aria labels can be used to show how certain buttons are used.
+		<p>Aria labels can be used to show how certain buttons are used by
+		providing with information about the button. When a screen reader reads
+		over the button the aria label will be read.
 		<h2>Colour</h2>
 		<p>Colour choices are crucial for everyone to see. I have carefully
 		selected the colours on this website to be as accessible as possible. A
 		good example of a badly designed colourscheme can be seen in my first
-		design of this website.
+		design of this website <em>night</em>.
+		<p>You want to keep the highest contrast ratio between the text and
+		background to ensure that everyone is able to read it.
 		<h2>Text-size</h2>
 		<p>Font size is also a crucial factor. Usually you want to have it
 		1rem to avoid changing the font size of the user preference.
-	</section>
-	<section>
-		<h1>Usability</h1>
-		<p>Some text
+		<p>This is important because people with bad eyesight would use tools
+		to change the font size on the page. If we force our own desired font
+		size on everyone they won't be too happy.
 	</section>
 </main>	
 <footer>
