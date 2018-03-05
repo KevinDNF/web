@@ -41,7 +41,7 @@
 
 <aside id="content">
 	<nav>
-	<h2>Contents</h2>
+	<h3>Contents</h3>
 		<ul>
 			<li><a onclick="toggleSidebar()" href="#1">Introduction</a></li>
 			<li><a onclick="toggleSidebar()" href="#2">Virtual Machines</a></li>
@@ -77,12 +77,12 @@
 </aside>		
 <main>
 	<section>
-		<h1 id="1">Introduction</h1>
+		<h2 id="1">Introduction</h2>
 		<p>This document is a in-progress log of all the things I've learned in
 			 Web Fundation at University of Porstmouth. I will also include
 			 all the extra knowledge I have gathered outside of lectures
 			 related to web fundation.
-		<h2 id="2">Virtual Machines</h2>
+		<h3 id="2">Virtual Machines</h3>
 		<p>In out first practical we where introduced to our Virtual
 		Machines which we will be using for our coursework website and
 		database design.
@@ -103,7 +103,7 @@ mkdir <em>path</em> <span>"Makes a directory."</span>
 
 ls <span>"Lists the files and directories in the current directory. Has lots of parameters like -a which shows invisible files/directories."</span>
 		</pre>
-		<h2>Website awards</h2>
+		<h3>Website awards</h3>
 		<p>We also filled out a form of what we think are the best and worst
 		website we have seen throught out the web. I nominated <a
 			 href="https://www.liamwong.com">LiamWong.com</a> since I really liked the
@@ -117,7 +117,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		interact with the shell enviroment. A really unique and well
 		designed website.
 
-		<h2>Hyperlinks</h2>
+		<h3>Hyperlinks</h3>
 		<p>To access the web we utilize web addresses and links, navigating
 		from page to page is done by the clicking of links on the screen that
 		takes you to another website.
@@ -135,7 +135,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		<p>Since we are going to be hosting our websites that means we have to
 		be able to point to different files on our file structure. Different
 		html files will be different pages for the user.
-		<h3>Absolute links</h3>
+		<h4>Absolute links</h4>
 		Absolute links are links that point from the root directory to a
 		specific file. This means that its specific to the device and file
 		structure of that device. 
@@ -145,7 +145,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		<p>So if I where to have this link on my computer with my super cool
 		username other people won't be able to access it since their username
 		won't be as cool as mine.
-		<h3>Relative links</h3>
+		<h4>Relative links</h4>
 		<p>Relative links are hyperlinks that are relative to the position of the
 		file thats reading it. So if I place a file with 
 		<p><em>hello/world.png</em>
@@ -154,7 +154,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 
 	</section>
 	<section>
-		<h1>HTML 5</h1>
+		<h2>HTML 5</h2>
 		<p>When creating a website the most basic languages used are HTML
 		and CSS. On the following weeks we were introduced to HTML and CSS more
 		specifically to HTML5, which has been taught for years and is the
@@ -203,7 +203,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		html file is the content of the webpage, if we want to have a larger
 		seperations between paragraphs we can do that via CSS.
 
-		<h2>Closing tags</h2>
+		<h3>Closing tags</h3>
 		<p>HTML is quite a curious language in which we can do completly wrong
 		and bad things and still have the page display the way we want it,
 		this is because browsers can work with bad code but they will
@@ -218,7 +218,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		<p>Most of my
 		code will follow googles standard... so don't mark me down for
 		"missing closing tags" or stuff like that. U.U
-		<h2>Validators</h2>
+		<h3>Validators</h3>
 		<p>We were also introduced to validators, which are websites that
 		check your html and css code and return any errors/warnings it finds.
 		Similar to how an IDE will display errors.
@@ -227,8 +227,8 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 	</section>
 	<section>
 
-		<h1>HTML Structure</h1>
-		<h2>Head</h2>
+		<h2>HTML Structure</h2>
+		<h3>Head</h3>
 		<p>Every html document has a head section, in which important
 		information is defined like title, meta tags and links to
 		stylesheets/scripts.
@@ -255,7 +255,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		<p>the <b> rel="shortcut icon"</b> is used to display a favicon image
 		in the tab's browsers.
 
-		<h2>Body - Semantic Markup</h2>
+		<h3>Body - Semantic Markup</h3>
 		Its important that the body of the html document follows good
 		semantic markup to ensure that the webpage can be read by
 		screenreaders.
@@ -292,7 +292,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		throught out the webpage. In this website I have 2 sets of navigation;
 		the top sticky bar and the sliding one.
 		
-		<h2>&lt;b&gt; vs &lt;strong&gt;</h2>
+		<h3>&lt;b&gt; vs &lt;strong&gt;</h3>
 		<p>Due to the introduction of semantic markup we now have two ways of
 		adding boldness to text but they are completly different in how they
 		are meant to be implemented. The b tag is used as usual, for visual
@@ -301,8 +301,8 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		important to the webpage.
 	</section>
 	<section>
-		<h1>Media Elements</h1>
-		<h2>Pictures and images</h2>
+		<h2>Media Elements</h2>
+		<h3>Pictures and images</h3>
 		<p>On HTML5 the introduction of the <b>picture</b> tag was quite a big
 		change to the image world, since before using the <b>img</b> tag was the only way of
 			implementing images.
@@ -334,7 +334,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 			<p>The crucial part of the picture tag is that it must contain either
 			a media query or a type tag. 
 	
-		<h2>Video</h2>
+		<h3>Video</h3>
 		<p>To add videos to a website we have to use the <b>video</b> tag and
 		specified some sources.
 		<p>Each source would be the same video but with different file types so
@@ -362,7 +362,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 			<track label="English" kind="subtitles" srclang="en" src="../videos/yetris.vtt" default>
 		</video>
 
-		<h2>SVG</h2>
+		<h3>SVG</h3>
 		<p>Using png and jpeg images are great for compatibility but they are
 		bitmap images. This can be an advantage or a disadvantage depending on
 		the scenario but one of their disadvantages is that they don't scale
@@ -380,11 +380,11 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 	
 	</section>
 	<section>
-		<h1>CSS 3</h1>
+		<h2>CSS 3</h2>
 		<p>CSS is the styling of the webpage, how it looks and how it
 		reflows. There are two main ways of implementing css. 
 
-		<h2>Inline styling</h2>
+		<h3>Inline styling</h3>
 		<p>Using the style attribute inside a tag can add style to a specific
 		element. But by doing this we are styling each element
 		specifically, so really big documents will require a stupid amount
@@ -396,7 +396,7 @@ ls <span>"Lists the files and directories in the current directory. Has lots of 
 		</pre>
 		<p>Which is why it is not recommended to use.
 
-		<h2>External Style Sheet</h2>
+		<h3>External Style Sheet</h3>
 		<p>We can style every element in a page by using an external style sheet,
 		which is usually a <em>something.css</em> containing css.
 		<pre class="html">
@@ -425,7 +425,7 @@ p{
 		<p>Where "../style.css" is the path to the file.
 	
 
-		<h2>CSS Selectors</h2>
+		<h3>CSS Selectors</h3>
 		<p>CSS works by selecting different tags and styling them as we wish.
 		
 <pre class="html">
@@ -464,7 +464,7 @@ style. In this case if we only want to style Text 2 which is inside the
 main tags we can use <em>main p { }</em> to select all the p tags inside
 the main tag.
 <p>
-		<h2>ID and Classes</h2>
+		<h3>ID and Classes</h3>
 		<p>Using normal css selectors is great but we are limited to only the
 		ones predefined, we can get around this by making our own selectors.
 		<p><b>ID</b> are used for one single element on the page.
@@ -486,7 +486,7 @@ the main tag.
   background-color:<span>blue</span>; 
 }
 		</pre>
-		<h2>Advance CSS selectors</h2>
+		<h3>Advance CSS selectors</h3>
 
 		<p>By creating this website I have encontered what you could considered
 		"advance css selectors" or just some of the less used but still very
@@ -508,7 +508,7 @@ div:not(.something){
 <em>//This will select all divs except the ones with a something class</em>
 		</pre>
 
-		<h2>Media Queries</h2>
+		<h3>Media Queries</h3>
 		<p>When smartphones became and standard item for evey user to carry around
 		websites struggled to resize correctly to every smartphone and opted to
 		have a seperate .mobile version just to adapt to smartphones. This was
@@ -536,7 +536,7 @@ div:not(.something){
 		can have a completly new webpage for mobile users.
 
 
-		<h2>Flex-Box</h2>
+		<h3>Flex-Box</h3>
 		<p>Flex-box is a super usefull way of formatting a webpage and ensure
 		that is reactive to screen size. The idea behind flex box is that you
 		can apply it to a set of elements in a container so that they fill the
@@ -571,31 +571,31 @@ body > *{
 
 	</section>
 	<section>
-		<h1>Accessibility and Usability</h1>
+		<h2>Accessibility and Usability</h2>
 		<p>I have mentioned before that we must follow the standards and be 
 		friendly to screen readers, all of this falls
 		into the category of accessibility which is a massive topic.
 		<p>Accessibility is allowing everyone to use the website which includes
 		people with many problems to use it. So how can we ensure that a blind
 		person can use our website? We use a variety of tools.
-		<h2>Video transcripts</h2>
+		<h3>Video transcripts</h3>
 		<p>People with difficulty hearing whats happening on the screen might
 		require some visual feedback from the video to fully understand what is
 		happening. Which is why it is important to add subtitles to videos via
 		a video transcript file, <em>transcript.vtt</em>. I have an example of
 		this down below.
-		<h2>Aria-label</h2>
+		<h3>Aria-label</h3>
 		<p>Aria labels can be used to show how certain buttons are used by
 		providing with information about the button. When a screen reader reads
 		over the button the aria label will be read.
-		<h2>Colour</h2>
+		<h3>Colour</h3>
 		<p>Colour choices are crucial for everyone to see. I have carefully
 		selected the colours on this website to be as accessible as possible. A
 		good example of a badly designed colourscheme can be seen in my first
 		design of this website <em>night</em>.
 		<p>You want to keep the highest contrast ratio between the text and
 		background to ensure that everyone is able to read it.
-		<h2>Text-size</h2>
+		<h3>Text-size</h3>
 		<p>Font size is also a crucial factor. Usually you want to have it
 		1rem to avoid changing the font size of the user preference.
 		<p>This is important because people with bad eyesight would use tools
@@ -604,7 +604,7 @@ body > *{
 	</section>
 </main>	
 <footer>
-	<h1>Hey! I'm clean html/css. Validate me here!</h1>
+	<h2>Hey! I'm clean html/css. Validate me here!</h2>
 	<a href="https://validator.w3.org/check?uri=referer" target="_blank">
 		<picture>
 			<source srcset="../images/icons/html5.svg" type="image/svg+xml">
