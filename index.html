@@ -5,6 +5,7 @@
 	<link rel="shortcut icon" type="image/png" href="images/logoInverted.png">
 	<link rel="stylesheet" href="style.css">
 	<title>KevinDNF</title>
+	<script src="script.js"></script>
 
 <header>
 	<h1>Welcome</h1>
@@ -194,7 +195,11 @@
 		League of Legends and competitive enviroments.
 	</section>
 </main>
-<footer>
+<footer id="mainFooter">
+	<button type="button" onclick="toggleFooter()" aria-label="show/hide footer">
+		^
+	</button>
+
 	<h2>Hey! I'm clean html/css. Validate me here!</h2>
 	<a href="https://validator.w3.org/check?uri=referer" target="_blank"
 		aria-label="html validator">
