@@ -1,3 +1,6 @@
-[submodule "art/minimal"]
-	path = design/minimal
+[submodule "startpages/minimal"]
+	path = startpages/minimal
 	url = https://github.com/KevinDNF/minimal
+[submodule "startpages/NotSoMinimal"]
+	path = startpages/NotSoMinimal
+	url = https://github.com/KevinDNF/NotSoMinimal
